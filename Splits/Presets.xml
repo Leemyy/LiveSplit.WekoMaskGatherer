@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE Presets [
+  <!ENTITY T "Tracker_">
+  <!ENTITY TT "TransitionText_">
+  <!ENTITY M "Match_">
+]>
+<Presets>
+  <Preset name="Default">
+    <Split name="&TT;episode_1"/>
+    <Split name="&TT;episode_2"/>
+    <Split name="&TT;episode_3"/>
+    <Split name="&TT;episode_4"/>
+    <Split name="&TT;episode_5"/>
+    <Split name="&TT;episode_6"/>
+    <Split name="&TT;episode_7"/>
+    <Split name="&TT;episode_8"/>
+  </Preset>
+  <Preset name="Any% NMG">
+    <Split>&TT;episode_1</Split>
+    <Split>&TT;episode_2</Split>
+    <Split>&TT;episode_3</Split>
+    <Split>&TT;episode_4</Split>
+    <Split>&TT;episode_5</Split>
+    <Split>&TT;episode_6</Split>
+    <Split>&TT;episode_7</Split>
+    <Split>&TT;episode_8</Split>
+    <Split>&M;epi2-07-cubo_start</Split>
+    <Split>&M;epi2-07-cubo_end</Split>
+    <Split>&M;epi2-08-sukeban_end</Split>
+    <Split>&M;epi2-12-tournament_start</Split>
+    <Split>&M;epi2-12-tournament_end</Split>
+    <Split>&M;epi3-16-botZero_start</Split>
+    <Split>&M;epi3-16-botZero_end</Split>
+    <Split>&M;epi4-04-bots_start</Split>
+    <Split>&M;epi4-04-bots_end</Split>
+    <Split>&M;epi4-05-cafeteria_start</Split>
+    <Split>&M;epi4-05-cafeteria_end</Split>
+    <Split>&M;epi4-07-cubo_start</Split>
+    <Split>&M;epi4-07-cubo_end</Split>
+    <Split>&M;epi4-10-tournament_start</Split>
+    <Split>&M;epi4-10-tournament_end</Split>
+    <Split>&M;epi4-10-tournamentBots_end</Split>
+    <Split>&M;epi5-14-shoy_start</Split>
+    <Split>&M;epi5-14-shoy_end</Split>
+    <Split>&M;epi5-19-squid_start</Split>
+    <Split>&M;epi5-19-squid_end</Split>
+    <Split>&M;epi5-23-menino_start</Split>
+    <Split>&M;epi6-04-luna_end</Split>
+    <Split>&M;epi6-05a-chesterBattle_end</Split>
+    <Split>&M;epi6-10-shadowBots_start</Split>
+    <Split>&M;epi6-10-shadowBots_end</Split>
+    <Split>&M;epi6-12-twinstr_start</Split>
+    <Split>&M;epi6-12-twinstr_end</Split>
+    <Split>&M;epi6-14-twinagi_start</Split>
+    <Split>&M;epi6-14-twinagi_end</Split>
+    <Split>&M;epi6-16-twins_start</Split>
+    <Split>&M;epi6-16-twins_end</Split>
+    <Split>&M;epi6-17-boris_start</Split>
+    <Split>&M;epi6-17-boris_end</Split>
+    <Split>&M;epi6-18-tournament_start</Split>
+    <Split>&M;epi6-18-tournament_end</Split>
+    <Split>&M;epi6-03a-lunaPathTrainer_start</Split>
+    <Split>&M;epi8-03-tournament_start</Split>
+    <Split>&M;epi8-03-tournament_end</Split>
+    <Split>&M;epi8-06-mascots_end</Split>
+    <Split>&M;epi8-17-cubo_start</Split>
+    <Split>&M;epi8-17-cubo_end</Split>
+    <Split>&M;epi8-21-finalBoss_start</Split>
+    <Split>&M;epi8-21-finalBoss_end</Split>
+    <Split>&T;quest_epi2_task_task7_2</Split>
+    <Split>&T;quest_epi3_task_task14_2</Split>
+    <Split>&T;quest_epi4_task_goToRooftop2_2</Split>
+    <Split>&T;quest_epi4_task_talkToPrincipal_2</Split>
+    <Split>&T;quest_epi5_task_completeFortunatoTask_2</Split>
+    <Split>&T;quest_epi6_task_goToCafeteria_2</Split>
+    <Split>&T;quest_epi6_task_kyaboAtLibraryBasement_2</Split>
+    <Split>&T;quest_epi7_task_enterBorisHome_2</Split>
+    <Split>&M;minigame_2-0_start</Split>
+    <Split>&M;minigame_2-0_end</Split>
+    <Split>&T;tChest_rooftop2_1</Split>
+    <Split>&T;tChest_parkinglotOob1_1</Split>
+    <Split>&T;tChest_mountain6_1</Split>
+  </Preset>
+</Presets>
