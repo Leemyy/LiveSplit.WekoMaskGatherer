@@ -22,12 +22,12 @@ namespace LiveSplit.WekoMaskGatherer {
 
             settings = new TreeSettings(state, StartSettings, ResetSettings, OptionsSettings);
 
-            remainingSplits = new RemainingDictionary(logger);
+            _remainingSplits = new RemainingDictionary(logger);
         }
 
         public override void Dispose() {
             memory.Dispose();
-            memory = null;
+            memory = null!;
             base.Dispose();
         }
     }

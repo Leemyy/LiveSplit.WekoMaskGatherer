@@ -1,740 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!DOCTYPE Splits [
-  <!ENTITY T "Tracker_">
-  <!ENTITY TT "TransitionText_">
-  <!ENTITY M "Match_">
+  <!ENTITY B "Boss_">
+  <!ENTITY I "Item_">
+  <!ENTITY M "Map_">
 ]>
 <Splits>
-  <Empty name="Episodes" text=" - - Episodes - - "/>
-  <Split name="&TT;episode_1" text="Episode 1 Done"/>
-  <Split name="&TT;episode_2" text="Episode 2 Done"/>
-  <Split name="&TT;episode_3" text="Episode 3 Done"/>
-  <Split name="&TT;episode_4" text="Episode 4 Done"/>
-  <Split name="&TT;episode_5" text="Episode 5 Done"/>
-  <Split name="&TT;episode_6" text="Episode 6 Done"/>
-  <Split name="&TT;episode_7" text="Episode 7 Done"/>
-  <Split name="&TT;episode_8" text="Episode 8 Done"/>
+  <Empty name="Bosses" text=" - - Bosses - - "/>
+  <Split name="&B;Ragorus_start" text="Ragorus Encountered"/>
+  <Split name="&B;Ragorus_defeat" text="Ragorus Defeated"/>
+  <Split name="&B;Gorifiki_start" text="Gorifiki Encountered"/>
+  <Split name="&B;Gorifiki_defeat" text="Gorifiki Defeated"/>
+  <Split name="&B;Cinos_start" text="Cinos Encountered"/>
+  <Split name="&B;Cinos_defeat" text="Cinos Defeated"/>
+  <Split name="&B;Envy_start" text="Envy Encountered"/>
+  <Split name="&B;Envy_defeat" text="Envy Defeated"/>
 
-  <Empty name="Matches" text=" - - Dodgeball Matches - - "/>
-  <Parent name="matches_epi1" text="Episode 1 - Let the Games Begin!">
-    <Parent name="Story1" text=" - Story Matches - ">
-      <Split name="&M;epi1-03-dream_start" text="Vision (begin)"/>
-      <Split name="&M;epi1-03-dream_end"   text="Vision (end)"/>
-      <Split name="&M;epi1-03-introMatch_start" text="Opening Ceremony (begin)"/>
-      <Split name="&M;epi1-03-introMatch_end"   text="Opening Ceremony (end)"/>
-      <Split name="&M;epi1-06-vampy_start" text="Vampy (begin)"/>
-      <Split name="&M;epi1-06-vampy_end"   text="Vampy (end)"/>
-      <Split name="&M;epi1-07-squid_start" text="Squid (begin)"/>
-      <Split name="&M;epi1-07-squid_end"   text="Squid (end)"/>
-      <Split name="&M;epi1-08-boris_start" text="Boris (begin)"/>
-      <Split name="&M;epi1-08-boris_end"   text="Boris (end)"/>
-      <Split name="&M;epi1-08-mina_start" text="Mina (begin)"/>
-      <Split name="&M;epi1-08-mina_end"   text="Mina (end)"/>
-      <Split name="&M;epi1-09-menino_start" text="Nino (begin)"/>
-      <Split name="&M;epi1-09-menino_end"   text="Nino (end)"/>
-    </Parent>
-    <Parent name="Quest1" text=" - Quest Matches - ">
-      <Split name="&M;sqSimpleExperiment-01-kyabo_start" text="Kyabo (begin)"/>
-      <Split name="&M;sqSimpleExperiment-01-kyabo_end"   text="Kyabo (end)"/>
-      <Split name="&M;epi1-eb-dailyChallengeBattle_start" text="Daily Challenge 1 (begin)"/>
-      <Split name="&M;epi1-eb-dailyChallengeBattle_end"   text="Daily Challenge 1 (end)"/>
-    </Parent>
-    <Parent name="Trainer1" text=" - Trainer Matches - ">
-      <Split name="&M;epi1-trainer-schoolgrounds1_start" text="Trainer south (begin)"/>
-      <Split name="&M;epi1-trainer-schoolgrounds1_end"   text="Trainer south (end)"/>
-      <Split name="&M;epi1-trainer-schoolgrounds2_start" text="Trainer north (begin)"/>
-      <Split name="&M;epi1-trainer-schoolgrounds2_end"   text="Trainer north (end)"/>
-    </Parent>
+  <Empty name="Items" text=" - - Items - - "/>
+  <Parent name="items_weapons" text="Weapons">
+    <Split name="&I;ThePolyvalentBlade" text="The Polyvalent Blade"/>
+    <Split name="&I;GleamslashWhirlwind" text="Gleamslash Whirlwind"/>
+    <Split name="&I;DemonSword" text="Demon Sword"/>
   </Parent>
-  <Parent name="matches_epi2" text="Episode 2 - The Tournament's On!">
-    <Parent name="Story2" text=" - Story Matches - ">
-      <Split name="&M;epi2-02-special_start" text="Balltimate Lesson (begin)"/>
-      <Split name="&M;epi2-02-special_end"   text="Balltimate Lesson (end)"/>
-      <Split name="&M;epi2-03a-dannyIntro_start" text="Danny (begin)"/>
-      <Split name="&M;epi2-03a-dannyIntro_end"   text="Danny (end)"/>
-      <Split name="&M;epi2-04a-cuboIntro_start" text="Cubo (begin)"/>
-      <Split name="&M;epi2-04a-cuboIntro_end"   text="Cubo (end)"/>
-      <Split name="&M;epi2-05a-vampy_start" text="Vampy (begin)"/>
-      <Split name="&M;epi2-05a-vampy_end"   text="Vampy (end)"/>
-      <Split name="&M;epi2-07-cubo_start" text="Infirmary (begin)"/>
-      <Split name="&M;epi2-07-cubo_end"   text="Infirmary (end)"/>
-      <Split name="&M;epi2-08-sukeban_start" text="Suneko (begin)"/>
-      <Split name="&M;epi2-08-sukeban_end"   text="Suneko (end)"/>
-      <Split name="&M;epi2-09a-kyaboTactical_start" text="Kyabo (begin)"/>
-      <Split name="&M;epi2-09a-kyaboTactical_end"   text="Kyabo (end)"/>
-      <Split name="&M;epi2-12-tournament_start" text="Tournament vs. Cubo, Danny, and Kyabo (begin)"/>
-      <Split name="&M;epi2-12-tournament_end"   text="Tournament vs. Cubo, Danny, and Kyabo (end)"/>
-    </Parent>
-    <Parent name="Quest2" text=" - Quest Matches - ">
-      <Split name="&M;sqLostWallet-02-battle1_start" text="Wallet Match 1 (begin)"/>
-      <Split name="&M;sqLostWallet-02-battle1_end"   text="Wallet Match 1 (end)"/>
-      <Split name="&M;sqLostWallet-02-battle2_start" text="Wallet Match 2 (begin)"/>
-      <Split name="&M;sqLostWallet-02-battle2_end"   text="Wallet Match 2 (end)"/>
-      <Split name="&M;sqLostWallet-02-battle3_start" text="Wallet Match 3 (begin)"/>
-      <Split name="&M;sqLostWallet-02-battle3_end"   text="Wallet Match 3 (end)"/>
-      <Split name="&M;epi2-eb-dailyChallengeBattle_start" text="Daily Challenge 2 (begin)"/>
-      <Split name="&M;epi2-eb-dailyChallengeBattle_end"   text="Daily Challenge 2 (end)"/>
-    </Parent>
-    <Parent name="Trainer2" text=" - Trainer Matches - ">
-      <Split name="&M;epi2-01a-trainer01_intro_start" text="Trainer Dorm Stairs (begin)"/>
-      <Split name="&M;epi2-01a-trainer01_intro_end"   text="Trainer Dorm Stairs (end)"/>
-      <Split name="&M;epi2-01b-trainer02_plaza_start" text="Trainer Leisure Plaza (begin)"/>
-      <Split name="&M;epi2-01b-trainer02_plaza_end"   text="Trainer Leisure Plaza (end)"/>
-      <Split name="&M;epi2-trainer03_shop_start" text="Trainer Shop (begin)"/>
-      <Split name="&M;epi2-trainer03_shop_end"   text="Trainer Shop (end)"/>
-      <Split name="&M;epi2-eb-fountain_start" text="Trainer Infirmary Court (begin)"/>
-      <Split name="&M;epi2-eb-fountain_end"   text="Trainer Infirmary Court (end)"/>
-      <Split name="&M;epi2-eb-dome_start" text="Trainer Cafeteria Court west (begin)"/>
-      <Split name="&M;epi2-eb-dome_end"   text="Trainer Cafeteria Court west (end)"/>
-      <Split name="&M;epi2-eb-cafeteria_start" text="Trainer Cafeteria Court east (begin)"/>
-      <Split name="&M;epi2-eb-cafeteria_end"   text="Trainer Cafeteria Court east (end)"/>
-    </Parent>
+  <Parent name="items_shields" text="Shields">
+    <Split name="&I;WoodenShield" text="Wooden Shield"/>
+    <Split name="&I;CalciferaMask" text="Calcifera Mask"/>
+    <Split name="&I;GolemShield" text="Golem's Shield"/>
   </Parent>
-  <Parent name="matches_epi3" text="Episode 3 - A.I. Mayhem">
-    <Parent name="Story3" text=" - Story Matches - ">
-      <Split name="&M;epi3-02-katBots_start" text="Robots in Kat's Class (begin)"/>
-      <Split name="&M;epi3-02-katBots_end"   text="Robots in Kat's Class (end)"/>
-      <Split name="&M;epi3-03-plazaTony_start" text="Robots harassing Tony (begin)"/>
-      <Split name="&M;epi3-03-plazaTony_end"   text="Robots harassing Tony (end)"/>
-      <Split name="&M;epi3-08-labBots_start" text="Robots by Laboratory (begin)"/>
-      <Split name="&M;epi3-08-labBots_end"   text="Robots by Laboratory (end)"/>
-      <Split name="&M;epi3-10-chester_start" text="Chester (begin)"/>
-      <Split name="&M;epi3-10-chester_end"   text="Chester (end)"/>
-      <Split name="&M;epi3-12-labVampy_start" text="Vampy (begin)"/>
-      <Split name="&M;epi3-12-labVampy_end"   text="Vampy (end)"/>
-      <Split name="&M;epi3-13a-vampyBots_start" text="Vampy with Bots (begin)"/>
-      <Split name="&M;epi3-13a-vampyBots_end"   text="Vampy with Bots (end)"/>
-      <Split name="&M;epi3-14-menino_start" text="Nino (begin)"/>
-      <Split name="&M;epi3-14-menino_end"   text="Nino (end)"/>
-      <Split name="&M;epi3-16-botZero_start" text="Droidgebot Zero (begin)"/>
-      <Split name="&M;epi3-16-botZero_end"   text="Droidgebot Zero (end)"/>
-    </Parent>
-    <Parent name="Quest3" text=" - Quest Matches - ">
-      <Split name="&M;sqLostGlasses-02-secretClub_start" text="Glasses Match Club (begin)"/>
-      <Split name="&M;sqLostGlasses-02-secretClub_end"   text="Glasses Match Club (end)"/>
-      <Split name="&M;sqLostGlasses-03-battle1_start" text="Glasses Match Cafeteria 1 (begin)"/>
-      <Split name="&M;sqLostGlasses-03-battle1_end"   text="Glasses Match Cafeteria 1 (end)"/>
-      <Split name="&M;sqLostGlasses-03-battle2_start" text="Glasses Match Cafeteria 2 (begin)"/>
-      <Split name="&M;sqLostGlasses-03-battle2_end"   text="Glasses Match Cafeteria 2 (end)"/>
-      <Split name="&M;sqLostGlasses-03-battle3_start" text="Glasses Match Cafeteria 3 (begin)"/>
-      <Split name="&M;sqLostGlasses-03-battle3_end"   text="Glasses Match Cafeteria 3 (end)"/>
-      <Split name="&M;sqFountainBattles-02a-cableCar_start" text="Littering Match Cable Car (begin)"/>
-      <Split name="&M;sqFountainBattles-02a-cableCar_end"   text="Littering Match Cable Car (end)"/>
-      <Split name="&M;sqFountainBattles-02b-infirmary_start" text="Littering Match Infirmary (begin)"/>
-      <Split name="&M;sqFountainBattles-02b-infirmary_end"   text="Littering Match Infirmary (end)"/>
-      <Split name="&M;sqFountainBattles-02c-forest_start" text="Littering Match Forest (begin)"/>
-      <Split name="&M;sqFountainBattles-02c-forest_end"   text="Littering Match Forest (end)"/>
-      <Split name="&M;sqFountainBattles-03-final_start" text="Littering Match Fountain (begin)"/>
-      <Split name="&M;sqFountainBattles-03-final_end"   text="Littering Match Fountain (end)"/>
-      <Split name="&M;epi3-eb-dailyChallengeBattle_start" text="Daily Challenge 3 (begin)"/>
-      <Split name="&M;epi3-eb-dailyChallengeBattle_end"   text="Daily Challenge 3 (end)"/>
-    </Parent>
-    <Parent name="Trainer3" text=" - Trainer Matches - ">
-      <Split name="&M;epi3-trainer-dormarea1_start" text="Trainer Leisure Bridge (begin)"/>
-      <Split name="&M;epi3-trainer-dormarea1_end"   text="Trainer Leisure Bridge (end)"/>
-      <Split name="&M;epi3-trainer-schoolgrounds1_start" text="Trainer Infirmary (begin)"/>
-      <Split name="&M;epi3-trainer-schoolgrounds1_end"   text="Trainer Infirmary (end)"/>
-      <Split name="&M;epi3-trainer-schoolgrounds2_start" text="Trainer Main Plaza (begin)"/>
-      <Split name="&M;epi3-trainer-schoolgrounds2_end"   text="Trainer Main Plaza (end)"/>
-      <Split name="&M;epi3-trainer-schoolgrounds3_start" text="Trainer Cafeteria Court (begin)"/>
-      <Split name="&M;epi3-trainer-schoolgrounds3_end"   text="Trainer Cafeteria Court (end)"/>
-      <Split name="&M;epi3-trainer-schoolgrounds4_start" text="Trainer Schoolyard School Entrance (begin)"/>
-      <Split name="&M;epi3-trainer-schoolgrounds4_end"   text="Trainer Schoolyard School Entrance (end)"/>
-      <Split name="&M;epi3-trainer-school1_start" text="Trainer School Hallway west (begin)"/>
-      <Split name="&M;epi3-trainer-school1_end"   text="Trainer School Hallway west (end)"/>
-      <Split name="&M;epi3-trainer-school2_start" text="Trainer School Hallway east (begin)"/>
-      <Split name="&M;epi3-trainer-school2_end"   text="Trainer School Hallway east (end)"/>
-      <Split name="&M;epi3-trainer-forest1_start" text="Bot Forest Log Slope (begin)"/>
-      <Split name="&M;epi3-trainer-forest1_end"   text="Bot Forest Log Slope (end)"/>
-      <Split name="&M;epi3-trainer-forest2_start" text="Bot Forest Grass (begin)"/>
-      <Split name="&M;epi3-trainer-forest2_end"   text="Bot Forest Grass (end)"/>
-      <Split name="&M;epi3-trainer-forest3_start" text="Bot Forest Log Bridge (begin)"/>
-      <Split name="&M;epi3-trainer-forest3_end"   text="Bot Forest Log Bridge (end)"/>
-      <Split name="&M;epi3-trainer-forest4_start" text="Bot Forest Well (begin)"/>
-      <Split name="&M;epi3-trainer-forest4_end"   text="Bot Forest Well (end)"/>
-      <Split name="&M;epi3-trainer-forest5_start" text="Bot Forest Deep Woods (begin)"/>
-      <Split name="&M;epi3-trainer-forest5_end"   text="Bot Forest Deep Woods (end)"/>
-      <Split name="&M;epi3-trainer-forest6_start" text="Bot Forest Bridge (begin)"/>
-      <Split name="&M;epi3-trainer-forest6_end"   text="Bot Forest Bridge (end)"/>
-      <Split name="&M;epi3-trainer-forest7_start" text="Bot Forest Leisure Passage (begin)"/>
-      <Split name="&M;epi3-trainer-forest7_end"   text="Bot Forest Leisure Passage (end)"/>
-    </Parent>
+  <Parent name="items_relics" text="Relics">
+    <Split name="&I;CalmMindMask" text="Calm Mind Mask"/>
+    <Split name="&I;MomentumMask" text="Momentum Mask"/>
+    <Split name="&I;MerchantMask" text="Merchant's Mask"/>
+    <Split name="&I;CalcereousMask" text="Calcereous Mask"/>
+    <Split name="&I;SmallStaminaMask" text="Small Stamina Mask"/>
+    <Split name="&I;MediumStaminaMask" text="Medium Stamina Mask"/>
+    <Split name="&I;BigStaminaMask" text="Big Stamina Mask"/>
+    <Split name="&I;SmallLifeMask" text="Small Life Mask"/>
+    <Split name="&I;MediumLifeMask" text="Medium Life Mask"/>
+    <Split name="&I;BigLifeMask" text="Big Life Mask"/>
+    <Split name="&I;FlamingBoomerang" text="Flaming Boomerang"/>
+    <Split name="&I;HurricaneBoomerang" text="Hurricane Boomerang"/>
+    <Split name="&I;CraterMask" text="Crater Mask"/>
+    <Split name="&I;InfernoMask" text="Inferno Mask"/>
+    <Split name="&I;SoulsKing" text="Souls King"/>
+    <Split name="&I;SoulsQueen" text="Souls Queen"/>
+    <Split name="&I;LightWeaponRelic" text="Light Weapon Relic"/>
+    <Split name="&I;FurnaceMaskRelic" text="Furnace Mask Relic"/>
+    <Split name="&I;SmallDamageRelic" text="Small Damage Relic"/>
+    <Split name="&I;MediumDamageRelic" text="Medium Damage Relic"/>
+    <Split name="&I;MajorDamageRelic" text="Major Damage Relic"/>
+    <Split name="&I;SwiftRollRelic" text="Swift Roll Relic"/>
+    <Split name="&I;AquaticEnduranceRelic" text="Aquatic Endurance Relic"/>
+    <Split name="&I;WoundedSoulRelic" text="Wounded Soul Relic"/>
+    <Split name="&I;SwiftUnderdwellerMask" text="Swift Underdweller Mask"/>
+    <Split name="&I;ImpactUnderdwellerMask" text="Impact Underdweller Mask"/>
+    <Split name="&I;SanguineVisage" text="Sanguine Visage"/>
+    <Split name="&I;SandCarapace" text="Sand Carapace"/>
   </Parent>
-  <Parent name="matches_epi4" text="Episode 4 - Trouble Letter">
-    <Parent name="Story4" text=" - Story Matches - ">
-      <Split name="&M;epi4-01a-pizzaKetchup_start" text="Pizza (begin)"/>
-      <Split name="&M;epi4-01a-pizzaKetchup_end"   text="Pizza (end)"/>
-      <Split name="&M;epi4-01b-pixie1Bots_start" text="Pixie's Robots (begin)"/>
-      <Split name="&M;epi4-01b-pixie1Bots_end"   text="Pixie's Robots (end)"/>
-      <Split name="&M;epi4-01b-pixie2_start" text="Pixie in School (begin)"/>
-      <Split name="&M;epi4-01b-pixie2_end"   text="Pixie in School (end)"/>
-      <Split name="&M;epi4-01e-kakoClass_start" text="Parking Lot (begin)"/>
-      <Split name="&M;epi4-01e-kakoClass_end"   text="Parking Lot (end)"/>
-      <Split name="&M;epi4-03-sukebanTutorial_start" text="Suneko Tutorial (begin)"/>
-      <Split name="&M;epi4-03-sukebanTutorial_end"   text="Suneko Tutorial (end)"/>
-      <Split name="&M;epi4-04-bots_start" text="Robots in Lab (begin)"/>
-      <Split name="&M;epi4-04-bots_end"   text="Robots in Lab (end)"/>
-      <Split name="&M;epi4-04b-cafeteriaPixie_start" text="Pixie near Cafeteria (begin)"/>
-      <Split name="&M;epi4-04b-cafeteriaPixie_end"   text="Pixie near Cafeteria (end)"/>
-      <Split name="&M;epi4-05-cafeteria_start" text="Cafeteria (begin)"/>
-      <Split name="&M;epi4-05-cafeteria_end"   text="Cafeteria (end)"/>
-      <Split name="&M;epi4-07-cubo_start" text="Deep Woods (begin)"/>
-      <Split name="&M;epi4-07-cubo_end"   text="Deep Woods (end)"/>
-      <Split name="&M;epi4-10-tournament_start" text="Tournament vs. Pixie, Chester, and Noemi (begin)"/>
-      <Split name="&M;epi4-10-tournament_end"   text="Tournament vs. Pixie, Chester, and Noemi (end)"/>
-      <Split name="&M;epi4-10-tournamentBots_start" text="Tournament Robots (begin)"/>
-      <Split name="&M;epi4-10-tournamentBots_end"   text="Tournament Robots (end)"/>
-    </Parent>
-    <Parent name="Quest4" text=" - Quest Matches - ">
-      <Split name="&M;sqElementalBalls-01-start_start" text="Experimental Balls Noemi (begin)"/>
-      <Split name="&M;sqElementalBalls-01-start_end"   text="Experimental Balls Noemi (end)"/>
-      <Split name="&M;sqElementalBalls-02a-fire_start" text="Experimental Balls Fire (begin)"/>
-      <Split name="&M;sqElementalBalls-02a-fire_end"   text="Experimental Balls Fire (end)"/>
-      <Split name="&M;sqElementalBalls-02b-ice_start" text="Experimental Balls Ice (begin)"/>
-      <Split name="&M;sqElementalBalls-02b-ice_end"   text="Experimental Balls Ice (end)"/>
-      <Split name="&M;sqElementalBalls-02c-shock_start" text="Experimental Balls Shock (begin)"/>
-      <Split name="&M;sqElementalBalls-02c-shock_end"   text="Experimental Balls Shock (end)"/>
-      <Split name="&M;sqElementalBalls-03-questEnd_start" text="Experimental Balls Final (begin)"/>
-      <Split name="&M;sqElementalBalls-03-questEnd_end"   text="Experimental Balls Final (end)"/>
-      <Split name="&M;epi4-eb-dailyChallengeBattle_start" text="Daily Challenge 4 (begin)"/>
-      <Split name="&M;epi4-eb-dailyChallengeBattle_end"   text="Daily Challenge 4 (end)"/>
-    </Parent>
-    <Parent name="Trainer4" text=" - Trainer Matches - ">
-      <Split name="&M;epi4-trainer-schoolgrounds-1_start" text="Trainer Infirmary Court (begin)"/>
-      <Split name="&M;epi4-trainer-schoolgrounds-1_end"   text="Trainer Infirmary Court (end)"/>
-      <Split name="&M;epi4-trainer-schoolgrounds-2_start" text="Trainer Cafeteria Court (begin)"/>
-      <Split name="&M;epi4-trainer-schoolgrounds-2_end"   text="Trainer Cafeteria Court (end)"/>
-      <Split name="&M;epi4-trainer-schoolgrounds-0_start" text="Trainer Schoolyard Forest Passage (begin)"/>
-      <Split name="&M;epi4-trainer-schoolgrounds-0_end"   text="Trainer Schoolyard Forest Passage (end)"/>
-      <Split name="&M;epi4-trainer-forest-0_start" text="Trainer Forest Island (begin)"/>
-      <Split name="&M;epi4-trainer-forest-0_end"   text="Trainer Forest Island (end)"/>
-    </Parent>
+  <Parent name="items_active" text="Active Items">
+    <Split name="&I;ScarabMask" text="Scarab Mask"/>
+    <Split name="&I;Smilerang" text="Smilerang"/>
+    <Split name="&I;FlowobMask" text="Flowob Mask"/>
+    <Split name="&I;UnderdwellerMask" text="Underdweller Mask"/>
   </Parent>
-  <Parent name="matches_epi5" text="Episode 5 - Where's our Baby?">
-    <Parent name="Story5" text=" - Story Matches - ">
-      <Split name="&M;epi5-04a-cubo_start" text="Cubo and Danny (begin)"/>
-      <Split name="&M;epi5-04a-cubo_end"   text="Cubo and Danny (end)"/>
-      <Split name="&M;epi5-04b-mina_start" text="Mina and Balloony (begin)"/>
-      <Split name="&M;epi5-04b-mina_end"   text="Mina and Balloony (end)"/>
-      <Split name="&M;epi5-14-shoy_start" text="Shoy (begin)"/>
-      <Split name="&M;epi5-14-shoy_end"   text="Shoy (end)"/>
-      <Split name="&M;epi5-19-squid_start" text="Squid (begin)"/>
-      <Split name="&M;epi5-19-squid_end"   text="Squid (end)"/>
-      <Split name="&M;epi5-23-menino_start" text="Nino (begin)"/>
-      <Split name="&M;epi5-23-menino_end"   text="Nino (end)"/>
-    </Parent>
-    <Parent name="Quest5" text=" - Quest Matches - ">
-      <Split name="&M;epi5-eb-dailyChallengeBattle_start" text="Daily Challenge 5 (begin)"/>
-      <Split name="&M;epi5-eb-dailyChallengeBattle_end"   text="Daily Challenge 5 (end)"/>
-    </Parent>
-    <Parent name="Trainer5" text=" - Trainer Matches - ">
-      <Split name="&M;epi5-21a-libBattle_start" text="Trainer Library (begin)"/>
-      <Split name="&M;epi5-21a-libBattle_end"   text="Trainer Library (end)"/>
-      <Split name="&M;epi5-trainer-dormarea_shop_start" text="Trainer Shop (begin)"/>
-      <Split name="&M;epi5-trainer-dormarea_shop_end"   text="Trainer Shop (end)"/>
-      <Split name="&M;epi5-trainer-dormarea_forestPathway_start" text="Trainer Leisure Forest Passage (begin)"/>
-      <Split name="&M;epi5-trainer-dormarea_forestPathway_end"   text="Trainer Leisure Forest Passage (end)"/>
-      <Split name="&M;epi5-02a-bridgeBattle_start" text="Trainer Leisure Bridge (begin)"/>
-      <Split name="&M;epi5-02a-bridgeBattle_end"   text="Trainer Leisure Bridge (end)"/>
-      <Split name="&M;epi5-trainer-schoolgrounds_infirmary_start" text="Trainer Infirmary (begin)"/>
-      <Split name="&M;epi5-trainer-schoolgrounds_infirmary_end"   text="Trainer Infirmary (end)"/>
-      <Split name="&M;epi5-trainer-schoolgrounds_courtInfirmary1_start" text="Trainer Infirmary Court south (begin)"/>
-      <Split name="&M;epi5-trainer-schoolgrounds_courtInfirmary1_end"   text="Trainer Infirmary Court south (end)"/>
-      <Split name="&M;epi5-trainer-schoolgrounds_courtInfirmary2_start" text="Trainer Infirmary Court north (begin)"/>
-      <Split name="&M;epi5-trainer-schoolgrounds_courtInfirmary2_end"   text="Trainer Infirmary Court north (end)"/>
-      <Split name="&M;epi5-trainer-schoolgrounds_courtCafeteria_start" text="Trainer Cafeteria Court (begin)"/>
-      <Split name="&M;epi5-trainer-schoolgrounds_courtCafeteria_end"   text="Trainer Cafeteria Court (end)"/>
-      <Split name="&M;epi5-trainer-forest_schoolPathway_start" text="Trainer Forest School Passage (begin)"/>
-      <Split name="&M;epi5-trainer-forest_schoolPathway_end"   text="Trainer Forest School Passage (end)"/>
-      <Split name="&M;epi5-trainer-forest_rightPathway_start" text="Trainer Forest Grass (begin)"/>
-      <Split name="&M;epi5-trainer-forest_rightPathway_end"   text="Trainer Forest Grass (end)"/>
-      <Split name="&M;epi5-trainer-forest_logBridge_start" text="Trainer Forest Log Bridge (begin)"/>
-      <Split name="&M;epi5-trainer-forest_logBridge_end"   text="Trainer Forest Log Bridge (end)"/>
-      <Split name="&M;epi5-trainer-forest_dormitoryPathway_start" text="Trainer Forest Leisure Passage (begin)"/>
-      <Split name="&M;epi5-trainer-forest_dormitoryPathway_end"   text="Trainer Forest Leisure Passage (end)"/>
-      <Split name="&M;epi5-trainer-forest_deepwoodsBrush_start" text="Trainer Forest Deep Woods (begin)"/>
-      <Split name="&M;epi5-trainer-forest_deepwoodsBrush_end"   text="Trainer Forest Deep Woods (end)"/>
-      <Split name="&M;epi5-05-trainer-kako_start" text="Trainer School Hallway (begin)"/>
-      <Split name="&M;epi5-05-trainer-kako_end"   text="Trainer School Hallway (end)"/>
-      <Split name="&M;epi5-trainer-parkinglot_2_start" text="Trainer Parking Lot north west (begin)"/>
-      <Split name="&M;epi5-trainer-parkinglot_2_end"   text="Trainer Parking Lot north west (end)"/>
-      <Split name="&M;epi5-trainer-parkinglot_1_start" text="Trainer Parking Lot south west (begin)"/>
-      <Split name="&M;epi5-trainer-parkinglot_1_end"   text="Trainer Parking Lot south west (end)"/>
-      <Split name="&M;epi5-trainer-parkinglot_3_start" text="Trainer Parking Lot center (begin)"/>
-      <Split name="&M;epi5-trainer-parkinglot_3_end"   text="Trainer Parking Lot center (end)"/>
-      <Split name="&M;epi5-trainer-parkinglot_5_start" text="Trainer Parking Lot north (begin)"/>
-      <Split name="&M;epi5-trainer-parkinglot_5_end"   text="Trainer Parking Lot north (end)"/>
-      <Split name="&M;epi5-trainer-parkinglot_4_start" text="Bot Parking Lot north (begin)"/>
-      <Split name="&M;epi5-trainer-parkinglot_4_end"   text="Bot Parking Lot north (end)"/>
-      <Split name="&M;epi5-trainer-parkinglot_8_start" text="Bot Parking Lot south (begin)"/>
-      <Split name="&M;epi5-trainer-parkinglot_8_end"   text="Bot Parking Lot south (end)"/>
-      <Split name="&M;epi5-trainer-parkinglot_6_start" text="Trainer Parking Lot Sewer west (begin)"/>
-      <Split name="&M;epi5-trainer-parkinglot_6_end"   text="Trainer Parking Lot Sewer west (end)"/>
-      <Split name="&M;epi5-12a-denEntrance_start" text="Trainer Parking Lot Sewer east (begin)"/>
-      <Split name="&M;epi5-12a-denEntrance_end"   text="Trainer Parking Lot Sewer east (end)"/>
-      <Split name="&M;epi5-trainer-schoolgrounds_forestPathway2_start" text="Trainer Schoolyard Forest Passage south (begin)"/>
-      <Split name="&M;epi5-trainer-schoolgrounds_forestPathway2_end"   text="Trainer Schoolyard Forest Passage south (end)"/>
-      <Split name="&M;epi5-trainer-schoolgrounds_forestPathway_start" text="Trainer Schoolyard Forest Passage north (begin)"/>
-      <Split name="&M;epi5-trainer-schoolgrounds_forestPathway_end"   text="Trainer Schoolyard Forest Passage north (end)"/>
-    </Parent>
+  <Parent name="items_tunics" text="Tunics">
+    <Split name="&I;RebelTunic" text="Rebel Tunic"/>
+    <Split name="&I;IceTunic" text="Ice Tunic"/>
   </Parent>
-  <Parent name="matches_epi6" text="Episode 6 - Ghostly Secrets">
-    <Parent name="Story6" text=" - Story Matches - ">
-      <Split name="&M;epi6-02a-pixieBattle_start" text="Pixie Rematch (begin)"/>
-      <Split name="&M;epi6-02a-pixieBattle_end"   text="Pixie Rematch (end)"/>
-      <Split name="&M;epi6-04-luna_start" text="Luna (begin)"/>
-      <Split name="&M;epi6-04-luna_end"   text="Luna (end)"/>
-      <Split name="&M;epi6-05a-chesterBattle_start" text="Chester (begin)"/>
-      <Split name="&M;epi6-05a-chesterBattle_end"   text="Chester (end)"/>
-      <Split name="&M;epi6-10-shadowBots_start" text="Specters of the Forest (begin)"/>
-      <Split name="&M;epi6-10-shadowBots_end"   text="Specters of the Forest (end)"/>
-      <Split name="&M;epi6-12-twinstr_start" text="Naya (begin)"/>
-      <Split name="&M;epi6-12-twinstr_end"   text="Naya (end)"/>
-      <Split name="&M;epi6-14-twinagi_start" text="Nadine (begin)"/>
-      <Split name="&M;epi6-14-twinagi_end"   text="Nadine (end)"/>
-      <Split name="&M;epi6-16-twins_start" text="Naya and Nadine (begin)"/>
-      <Split name="&M;epi6-16-twins_end"   text="Naya and Nadine (end)"/>
-      <Split name="&M;epi6-17-boris_start" text="Boris (begin)"/>
-      <Split name="&M;epi6-17-boris_end"   text="Boris (end)"/>
-      <Split name="&M;epi6-17a-luna_start" text="Luna Rematch (begin)"/>
-      <Split name="&M;epi6-17a-luna_end"   text="Luna Rematch (end)"/>
-      <Split name="&M;epi6-18-tournament_start" text="Tournament vs. Luna, Naya, and Nadine (begin)"/>
-      <Split name="&M;epi6-18-tournament_end"   text="Tournament vs. Luna, Naya, and Nadine (end)"/>
-    </Parent>
-    <Parent name="Quest6" text=" - Quest Matches - ">
-      <Split name="&M;epi6-eb-dailyChallengeBattle_start" text="Daily Challenge 6 (begin)"/>
-      <Split name="&M;epi6-eb-dailyChallengeBattle_end"   text="Daily Challenge 6 (end)"/>
-      <Split name="&M;tournament-1_start" text="[Todo] Underground Tournament Match 1 (begin)"/>
-      <Split name="&M;tournament-1_end"   text="[Todo] Underground Tournament Match 1 (end)"/>
-    </Parent>
-    <Parent name="Trainer6" text=" - Trainer Matches - ">
-      <Split name="&M;epi6-02b-trainerCafeteria_start" text="Trainer Cafeteria Entrance (begin)"/>
-      <Split name="&M;epi6-02b-trainerCafeteria_end"   text="Trainer Cafeteria Entrance (end)"/>
-      <Split name="&M;epi6-03a-lunaPathTrainer_start" text="Trainer Forest Tombstone (begin)"/>
-      <Split name="&M;epi6-03a-lunaPathTrainer_end"   text="Trainer Forest Tombstone (end)"/>
-      <Split name="&M;epi6-trainer-schoolHallway3_start" text="Trainer School Foyer south (begin)"/>
-      <Split name="&M;epi6-trainer-schoolHallway3_end"   text="Trainer School Foyer south (end)"/>
-      <Split name="&M;epi6-trainer-schoolHallway2_start" text="Trainer School Foyer middle (begin)"/>
-      <Split name="&M;epi6-trainer-schoolHallway2_end"   text="Trainer School Foyer middle (end)"/>
-      <Split name="&M;epi6-trainer-schoolHallway1_start" text="Trainer School Foyer north (begin)"/>
-      <Split name="&M;epi6-trainer-schoolHallway1_end"   text="Trainer School Foyer north (end)"/>
-    </Parent>
+  <Parent name="items_quest" text="Quest Items">
+    <Split name="&I;YellowKey" text="Yellow Key"/>
+    <Split name="&I;BlueKey" text="Blue Key"/>
+    <Split name="&I;SliceOfHouCheese" text="Slice of HouCheese"/>
+    <Split name="&I;PiouMilk" text="Piou Milk"/>
+    <Split name="&I;Flour" text="Flour"/>
+    <Split name="&I;TerrifiedHoushi" text="Terrified Houshi"/>
+    <Split name="&I;NarcissioPortrait" text="Narcissio's Portrait"/>
+    <Split name="&I;WoodenSmokingPipe" text="Wooden Smoking Pipe"/>
+    <Split name="&I;TwistedHorn" text="Twisted Horn"/>
+    <Split name="&I;Azurite" text="Azurite"/>
+    <Split name="&I;BottleOfLemonJuice" text="Bottle of Lemon Juice"/>
+    <Split name="&I;RaceTicket" text="Race Ticket"/>
+    <Split name="&I;RebelMask" text="Rebel Mask"/>
+    <Split name="&I;BottleOfGlue" text="Bottle of Glue"/>
+    <Split name="&I;Microphone" text="Microphone"/>
+    <Split name="&I;VinylRecord" text="Vinyl Record"/>
+    <Split name="&I;YouthElixir" text="Youth Elixir"/>
+    <Split name="&I;EvilEye" text="Evil Eye"/>
+    <Split name="&I;NebulaSphere" text="Nebula Sphere"/>
+    <Split name="&I;Medal" text="Medal"/>
   </Parent>
-  <Parent name="matches_epi7" text="Episode 7 - The Fellowship of the Square">
-    <Parent name="Story7" text=" - Story Matches - ">
-      <Split name="&M;epi7-06-radio_start" text="Radio Tower (begin)"/>
-      <Split name="&M;epi7-06-radio_end"   text="Radio Tower (end)"/>
-      <Split name="&M;epi7-06a-twintecBattle_start" text="Noemi and Luna (begin)"/>
-      <Split name="&M;epi7-06a-twintecBattle_end"   text="Noemi and Luna (end)"/>
-      <Split name="&M;epi7-11-cultCubo_start" text="Cubo and Squareballers (begin)"/>
-      <Split name="&M;epi7-11-cultCubo_end"   text="Cubo and Squareballers (end)"/>
-      <Split name="&M;epi7-11-cultGhost_start" text="Mascot (begin)"/>
-      <Split name="&M;epi7-11-cultGhost_end"   text="Mascot (end)"/>
-      <Split name="&M;epi7-11-cultGhostMenino_start" text="Nino (begin)"/>
-      <Split name="&M;epi7-11-cultGhostMenino_end"   text="Nino (end)"/>
-      <Split name="&M;epi7-14a-twinsBattle_start" text="Nadine and Naya (begin)"/>
-      <Split name="&M;epi7-14a-twinsBattle_end"   text="Nadine and Naya (end)"/>
-    </Parent>
-    <Parent name="Quest7" text=" - Quest Matches - ">
-      <Split name="&M;1-sqRetriever-forestBattle_start" text="Retrieve Books in the Forest (begin)"/>
-      <Split name="&M;1-sqRetriever-forestBattle_end"   text="Retrieve Books in the Forest (end)"/>
-      <Split name="&M;2-sqRetriever-parkinglotBattle_start" text="Retrieve Books at the Parking Lot (begin)"/>
-      <Split name="&M;2-sqRetriever-parkinglotBattle_end"   text="Retrieve Books at the Parking Lot (end)"/>
-      <Split name="&M;3-sqRetriever-mountainBattle_start" text="Retrieve Books at Mount Dodji (begin)"/>
-      <Split name="&M;3-sqRetriever-mountainBattle_end"   text="Retrieve Books at Mount Dodji (end)"/>
-      <Split name="&M;epi7-eb-dailyChallengeBattle_start" text="Daily Challenge 7 (begin)"/>
-      <Split name="&M;epi7-eb-dailyChallengeBattle_end"   text="Daily Challenge 7 (end)"/>
-    </Parent>
-    <Parent name="Trainer7" text=" - Trainer Matches - ">
-      <Split name="&M;epi7-01a-trainer-cablePathway_1_start" text="Trainer Schoolyard Cable Car south (begin)"/>
-      <Split name="&M;epi7-01a-trainer-cablePathway_1_end"   text="Trainer Schoolyard Cable Car south (end)"/>
-      <Split name="&M;epi7-01b-trainer-cablePathway_2_start" text="Trainer Schoolyard Cable Car middle (begin)"/>
-      <Split name="&M;epi7-01b-trainer-cablePathway_2_end"   text="Trainer Schoolyard Cable Car middle (end)"/>
-      <Split name="&M;epi7-01c-trainer-cablePathway_3_start" text="Trainer Schoolyard Cable Car north (begin)"/>
-      <Split name="&M;epi7-01c-trainer-cablePathway_3_end"   text="Trainer Schoolyard Cable Car north (end)"/>
-      <Split name="&M;trainer-mountain-0_start" text="Trainer Mt.Dodji by Shack (begin)"/>
-      <Split name="&M;trainer-mountain-0_end"   text="Trainer Mt.Dodji by Shack (end)"/>
-      <Split name="&M;trainer-mountain-1_start" text="Trainer Mt.Dodji in Chasm (begin)"/>
-      <Split name="&M;trainer-mountain-1_end"   text="Trainer Mt.Dodji in Chasm (end)"/>
-      <Split name="&M;trainer-mountain-2_start" text="Trainer Mt.Dodji beyond Chasm (begin)"/>
-      <Split name="&M;trainer-mountain-2_end"   text="Trainer Mt.Dodji beyond Chasm (end)"/>
-      <Split name="&M;trainer-mountain-3_start" text="Trainer Mt.Dodji Eastern Cliff east (begin)"/>
-      <Split name="&M;trainer-mountain-3_end"   text="Trainer Mt.Dodji Eastern Cliff east (end)"/>
-      <Split name="&M;trainer-mountain-9_start" text="Trainer Mt.Dodji Eastern Cliff west (begin)"/>
-      <Split name="&M;trainer-mountain-9_end"   text="Trainer Mt.Dodji Eastern Cliff west (end)"/>
-      <Split name="&M;trainer-mountain-4_start" text="Trainer Mt.Dodji on Shack (begin)"/>
-      <Split name="&M;trainer-mountain-4_end"   text="Trainer Mt.Dodji on Shack (end)"/>
-      <Split name="&M;trainer-mountain-10_start" text="Trainer Mt.Dodji Western Cliff west (begin)"/>
-      <Split name="&M;trainer-mountain-10_end"   text="Trainer Mt.Dodji Western Cliff west (end)"/>
-      <Split name="&M;trainer-mountain-5_start" text="Trainer Mt.Dodji Western Cliff east (begin)"/>
-      <Split name="&M;trainer-mountain-5_end"   text="Trainer Mt.Dodji Western Cliff east (end)"/>
-      <Split name="&M;trainer-mountain-8_start" text="Trainer Mt.Dodji Eastern Cliff top (begin)"/>
-      <Split name="&M;trainer-mountain-8_end"   text="Trainer Mt.Dodji Eastern Cliff top (end)"/>
-      <Split name="&M;trainer-mountain-6_start" text="Trainer Mt.Dodji Radio Tower (begin)"/>
-      <Split name="&M;trainer-mountain-6_end"   text="Trainer Mt.Dodji Radio Tower (end)"/>
-      <Split name="&M;trainer-mountain-7_start" text="Trainer Mt.Dodji Western Cliff top (begin)"/>
-      <Split name="&M;trainer-mountain-7_end"   text="Trainer Mt.Dodji Western Cliff top (end)"/>
-      <Split name="&M;trainer-school1f-1_start" text="Trainer School Foyer west (begin)"/>
-      <Split name="&M;trainer-school1f-1_end"   text="Trainer School Foyer west (end)"/>
-      <Split name="&M;trainer-school1f-2_start" text="Trainer School Foyer east (begin)"/>
-      <Split name="&M;trainer-school1f-2_end"   text="Trainer School Foyer east (end)"/>
-      <Split name="&M;trainer-school2f-1_start" text="Trainer School Hallway center (begin)"/>
-      <Split name="&M;trainer-school2f-1_end"   text="Trainer School Hallway center (end)"/>
-      <Split name="&M;trainer-school2f-2_start" text="Trainer School Hallway east (begin)"/>
-      <Split name="&M;trainer-school2f-2_end"   text="Trainer School Hallway east (end)"/>
-      <Split name="&M;epi7-trainer-forest-3_start" text="Trainer Forest north (begin)"/>
-      <Split name="&M;epi7-trainer-forest-3_end"   text="Trainer Forest north (end)"/>
-      <Split name="&M;epi7-trainer-forest-1_start" text="Trainer Forest west (begin)"/>
-      <Split name="&M;epi7-trainer-forest-1_end"   text="Trainer Forest west (end)"/>
-      <Split name="&M;epi7-trainer-forest-2_start" text="Trainer Forest south (begin)"/>
-      <Split name="&M;epi7-trainer-forest-2_end"   text="Trainer Forest south (end)"/>
-    </Parent>
-  </Parent>
-  <Parent name="matches_epi8" text="Episode 8 - The Grand Finale">
-    <Parent name="Story8" text=" - Story Matches - ">
-      <Split name="&M;epi8-03-tournament_start" text="Tournament vs. Boris, Vampy, and Nino (begin)"/>
-      <Split name="&M;epi8-03-tournament_end"   text="Tournament vs. Boris, Vampy, and Nino (end)"/>
-      <Split name="&M;epi8-06-mascots_start" text="Mascots by the Dorm (begin)"/>
-      <Split name="&M;epi8-06-mascots_end"   text="Mascots by the Dorm (end)"/>
-      <Split name="&M;epi8-09-mascotsChester_start" text="Saving Chester and Danny (begin)"/>
-      <Split name="&M;epi8-09-mascotsChester_end"   text="Saving Chester and Danny (end)"/>
-      <Split name="&M;epi8-10-mascotsBoris_start" text="Saving Vampy and Boris (begin)"/>
-      <Split name="&M;epi8-10-mascotsBoris_end"   text="Saving Vampy and Boris (end)"/>
-      <Split name="&M;epi8-14-mascotsLuna_start" text="Saving Luna and Noemi (begin)"/>
-      <Split name="&M;epi8-14-mascotsLuna_end"   text="Saving Luna and Noemi (end)"/>
-      <Split name="&M;epi8-14-mascotsPixie_start" text="Saving Pixie, Naya, and Nadine (begin)"/>
-      <Split name="&M;epi8-14-mascotsPixie_end"   text="Saving Pixie, Naya, and Nadine (end)"/>
-      <Split name="&M;epi8-14-mascotsSquid_start" text="Saving Squid and Tony (begin)"/>
-      <Split name="&M;epi8-14-mascotsSquid_end"   text="Saving Squid and Tony (end)"/>
-      <Split name="&M;epi8-17-cubo_start" text="Cubo (begin)"/>
-      <Split name="&M;epi8-17-cubo_end"   text="Cubo (end)"/>
-      <Split name="&M;epi8-18-mascotsCableCar_start" text="Mascots guarding the Cable Car (begin)"/>
-      <Split name="&M;epi8-18-mascotsCableCar_end"   text="Mascots guarding the Cable Car (end)"/>
-      <Split name="&M;epi8-21-finalBoss_start" text="Nino (begin)"/>
-      <Split name="&M;epi8-21-finalBoss_end"   text="Nino (end)"/>
-    </Parent>
-    <Parent name="Quest8" text=" - Quest Matches - ">
-      <Split name="&M;epi8-eb-dailyChallengeBattle_start" text="Daily Challenge 8 (begin)"/>
-      <Split name="&M;epi8-eb-dailyChallengeBattle_end"   text="Daily Challenge 8 (end)"/>
-    </Parent>
-    <Parent name="Trainer8" text=" - Trainer Matches - ">
-      <Split name="&M;epi8-trainer-dormarea-0_start" text="Mascot Leisure (begin)"/>
-      <Split name="&M;epi8-trainer-dormarea-0_end"   text="Mascot Leisure (end)"/>
-      <Split name="&M;epi8-trainer-schoolgrounds-1_start" text="Mascot Infirmary (begin)"/>
-      <Split name="&M;epi8-trainer-schoolgrounds-1_end"   text="Mascot Infirmary (end)"/>
-      <Split name="&M;epi8-trainer-schoolgrounds-0_start" text="Mascot Main Plaza west (begin)"/>
-      <Split name="&M;epi8-trainer-schoolgrounds-0_end"   text="Mascot Main Plaza west (end)"/>
-      <Split name="&M;epi8-trainer-schoolgrounds-3_start" text="Mascot Main Plaza east (begin)"/>
-      <Split name="&M;epi8-trainer-schoolgrounds-3_end"   text="Mascot Main Plaza east (end)"/>
-      <Split name="&M;epi8-trainer-schoolgrounds-2_start" text="Mascot Cafeteria Court (begin)"/>
-      <Split name="&M;epi8-trainer-schoolgrounds-2_end"   text="Mascot Cafeteria Court (end)"/>
-      <Split name="&M;epi8-trainer-schoolgrounds-4_start" text="Mascot Schoolyard School Entrance (begin)"/>
-      <Split name="&M;epi8-trainer-schoolgrounds-4_end"   text="Mascot Schoolyard School Entrance (end)"/>
-      <Split name="&M;epi8-trainer-forest-0_start" text="Mascot Forest Well (begin)"/>
-      <Split name="&M;epi8-trainer-forest-0_end"   text="Mascot Forest Well (end)"/>
-      <Split name="&M;epi8-trainer-forest-1_start" text="Mascot Forest Deep Woods (begin)"/>
-      <Split name="&M;epi8-trainer-forest-1_end"   text="Mascot Forest Deep Woods (end)"/>
-      <Split name="&M;epi8-trainer-school_1f-0_start" text="Mascot School Foyer west (begin)"/>
-      <Split name="&M;epi8-trainer-school_1f-0_end"   text="Mascot School Foyer west (end)"/>
-      <Split name="&M;epi8-trainer-school_1f-1_start" text="Mascot School Foyer east (begin)"/>
-      <Split name="&M;epi8-trainer-school_1f-1_end"   text="Mascot School Foyer east (end)"/>
-      <Split name="&M;epi8-trainer-schoolgrounds-5_start" text="Mascot Schoolyard Cable Car (begin)"/>
-      <Split name="&M;epi8-trainer-schoolgrounds-5_end"   text="Mascot Schoolyard Cable Car (end)"/>
-      <Split name="&M;epi8-trainer-mountain-0_start" text="Mascot Mt.Dodji bottom (begin)"/>
-      <Split name="&M;epi8-trainer-mountain-0_end"   text="Mascot Mt.Dodji bottom (end)"/>
-      <Split name="&M;epi8-trainer-mountain-1_start" text="Mascot Mt.Dodji top (begin)"/>
-      <Split name="&M;epi8-trainer-mountain-1_end"   text="Mascot Mt.Dodji top (end)"/>
-    </Parent>
+  <Parent name="items_masks" text="Primordial Masks">
+    <Split name="&I;PrimordialWrathMask" text="Primordial Wrath Mask"/>
+    <Split name="&I;PrimordialGluttonyMask" text="Primordial Gluttony Mask"/>
+    <Split name="&I;PrimordialGreedMask" text="Primordial Greed Mask"/>
+    <Split name="&I;PrimordialLustMask" text="Primordial Lust Mask"/>
+    <Split name="&I;PrimordialSlothMask" text="Primordial Sloth Mask"/>
+    <Split name="&I;PrimordialPrideMask" text="Primordial Pride Mask"/>
   </Parent>
 
-  <Empty name="MainQuests" text=" - - Main Quests - - "/>
-  <Parent name="epi1" text="Episode 1 - Let the Games Begin!">
-    <Split name="&T;quest_epi1_task_attendCeremony_2" text="Attend the ceremony at the Central Plaza!"/>
-    <Split name="&T;quest_epi1_task_goToClassroom_2" text="Meet the professors at the Main Building!"/>
-    <Split name="&T;quest_epi1_task_followBexigo_2" text="Talk to Balloony outside!"/>
-    <Split name="&T;quest_epi1_task_talkToKyabo_2" text="Meet up with Naya and Kyabo near the Library!"/>
-    <Split name="&T;quest_epi1_task_goToLibrary_2" text="Check out the Library!"/>
-    <Split name="&T;quest_epi1_task_talkToMina_2" text="Meet up with your next prospect at one of the Central Plaza courts!"/>
-    <Split name="&T;quest_epi1_task_returnToClassroom_2" text="Report your progress to the professors at the Main Building!"/>
-    <Split name="&T;quest_epi1_task_goToDorms_2" text="Check out the Dorm!"/>
+  <Empty name="Exploration" text=" - - Exploration - - "/>
+  <!--Parent name="maps" text="Toros">
   </Parent>
-  <Parent name="epi2" text="Episode 2 - The Tournament's On!">
-    <Split name="&T;quest_epi2_task_task1_2" text="Attend Fortunato's class!"/>
-    <Split name="&T;quest_epi2_task_task2_2" text="Go to the Dome for the Tournament briefing!"/>
-    <Split name="&T;quest_epi2_task_task3_2" text="Search for a Badge in the Cafeteria!"/>
-    <Split name="&T;quest_epi2_task_task4_2" text="Ask the School Monitor about a Badge at the gate to the Forest!"/>
-    <Split name="&T;quest_epi2_task_task4a_fountainBattle_2" text="Help the School Monitor deal with a troublesome student at the Garden!"/>
-    <Split name="&T;quest_epi2_task_task4b_returnToMonitora_2" text="Get back to the School Monitor!"/>
-    <Split name="&T;quest_epi2_task_task5_2" text="Search for a Badge in the Infirmary!"/>
-    <Split name="&T;quest_epi2_task_task6_2" text="Return to the Cafeteria to get another Badge!"/>
-    <Split name="&T;quest_epi2_task_task7_2" text="Search for a Badge in the Library!"/>
-    <Split name="&T;quest_epi2_task_task8_2" text="Return to the Dome with your Badges"/>
-    <Split name="&T;quest_epi2_task_task9_2" text="Attend your Tournament match!"/>
-  </Parent>
-  <Parent name="epi3" text="Episode 3 - A.I. Mayhem">
-    <Split name="&T;quest_epi3_task_katClassroom_2" text="Go to Kat's classroom for today's lesson!"/>
-    <Split name="&T;quest_epi3_task_centralPlaza_2" text="Go after the Droidgebots at the Central Plaza!"/>
-    <Split name="&T;quest_epi3_task_task3_2" text="Go to the Forest!"/>
-    <Split name="&T;quest_epi3_task_task4_2" text="Get written permission from the Principal!"/>
-    <Split name="&T;quest_epi3_task_task5_2" text="Deliver the note with written permission to the School Monitor!"/>
-    <Split name="&T;quest_epi3_task_task6_2" text="Go to the Forest!"/>
-    <Split name="&T;quest_epi3_task_task7_2" text="Find the Lab within the Forest!"/>
-    <Split name="&T;quest_epi3_task_task8_2" text="Retrieve the password from Chester!"/>
-    <Split name="&T;quest_epi3_task_task9_2" text="Return to the Lab with the password!"/>
-    <Split name="&T;quest_epi3_task_task9b_2" text="Battle it out outside the Lab!"/>
-    <Split name="&T;quest_epi3_task_task10_2" text="At last, get the remote control from the Lab!"/>
-    <Split name="&T;quest_epi3_task_task11_2" text="Activate the remote control at the Central Plaza!"/>
-    <Split name="&T;quest_epi3_task_task12_2" text="Locate Droidgebot Zero in the Forest!"/>
-    <Split name="&T;quest_epi3_task_task13_2" text="Locate Droidgebot Zero in the Deep Woods!"/>
-    <Split name="&T;quest_epi3_task_task14_2" text="Check if the chaos has subdued around the school!"/>
-  </Parent>
-  <Parent name="epi4" text="Episode 4 - Trouble Letter">
-    <Split name="&T;quest_epi4_task_goToRooftop_2" text="Meet your secret admirer on the Rooftop of the school!"/>
-    <Split name="&T;quest_epi4_task_goToClass_2" text="Attend professor Ma'kako's class!"/>
-    <Split name="&T;quest_epi4_task_goToRooftop2_2" text="Try to meet your secret admirer again on the Rooftop of the school!"/>
-    <Split name="&T;quest_epi4_task_goToScienceLab_2" text="Bring the letter to the Lab for a thorough analysis!"/>
-    <Split name="&T;quest_epi4_task_talkToCafeteriaLady_2" text="Talk to the Lunch Lay!"/>
-    <Split name="&T;quest_epi4_task_deepForestBattle_2" text="Look for Boris in the Deep Woods!"/>
-    <Split name="&T;quest_epi4_task_talkToPrincipal_2" text="Talk to Boris at the Principal's Office!"/>
-    <Split name="&T;quest_epi4_task_domeTournamentBattle_2" text="Attend your Tournament match!"/>
-  </Parent>
-  <Parent name="epi5" text="Episode 5 - Where's our Baby?">
-    <Split name="&T;quest_epi5_task_goToFortunatosClass_2" text="Don't be late for professor Fortunato's class!"/>
-    <Split name="&T;quest_epi5_task_goToCantina_2" text="Go to the Cafeteria for some quality family time!"/>
-    <Split name="&T;quest_epi5_task_grabBabyBall_2" text="Where did the Baby Ball go?!"/>
-    <Split name="&T;quest_epi5_task_explainSituationToFortunato_2" text="Search for George in Fortunato's Classroom!"/>
-    <Split name="&T;quest_epi5_task_goToLab_2" text="Get your Sand Sample analyzed at the Lab!"/>
-    <Split name="&T;quest_epi5_task_talkToMakako_2" text="Pester professor Ma'kako about the keys to the Parking Lot gate!"/>
-    <Split name="&T;quest_epi5_task_exploreParkingLot_2" text="Explore the Parking Lot!"/>
-    <Split name="&T;quest_epi5_task_findTheCar_2" text="Find the entrance to the suspicious place!"/>
-    <Split name="&T;quest_epi5_task_talkToTony_2" text="Explore Big Tony's Den!"/>
-    <Split name="&T;quest_epi5_task_goToTheDenCourt_2" text="Go to the suspicious court!"/>
-    <Split name="&T;quest_epi5_task_talkToTonyAgain_2" text="Talk to Big Tony!"/>
-    <Split name="&T;quest_epi5_task_leaveTheDen_2" text="Leave Big Tony's Den!"/>
-    <Split name="&T;quest_epi5_task_interrogateSquid_2" text="Interrogate Squid!"/>
-    <Split name="&T;quest_epi5_task_goToSquidsHideout_2" text="Track down Squid!"/>
-    <Split name="&T;quest_epi5_task_returnBallsToFortunato_2" text="Return to professor Fortunato's class!"/>
-    <Split name="&T;quest_epi5_task_lookForMenino_2" text="Look around for Nino!"/>
-    <Split name="&T;quest_epi5_task_goToTheLibrary_2" text="Look for Nino at the Library!"/>
-    <Split name="&T;quest_epi5_task_goToCantina_lookForMenino_2" text="Look for Nino at the Cafeteria!"/>
-    <Split name="&T;quest_epi5_task_completeFortunatoTask_2" text="Turn in your assignment to professor Fortunato!"/>
-  </Parent>
-  <Parent name="epi6" text="Episode 6 - Ghostly Secrets">
-    <Split name="&T;quest_epi6_task_goToClassFake_2" text="Go to today's class!"/>
-    <Split name="&T;quest_epi6_task_goToCafeteria_2" text="Inquire about the letter at the Cafeteria!"/>
-    <Split name="&T;quest_epi6_task_meetLunaAtForest_2" text="Meet up with the secret sender at the Tombstone in the Forest!"/>
-    <Split name="&T;quest_epi6_task_goToFortunatoClassroom_2" text="Ask professor Fortunato about the ghostly technique!"/>
-    <Split name="&T;quest_epi6_task_goToLibrary_2" text="Search the Library for information on the ghostly technique!"/>
-    <Split name="&T;quest_epi6_task_goToLibraryBasement_2" text="Search the Library's basement section for information on the ghostly technique!"/>
-    <Split name="&T;quest_epi6_task_kyaboAtLibraryBasement_2" text="What is Kyabo up to...?"/>
-    <Split name="&T;quest_epi6_task_kyaboOutsideLibrary_2" text="Search around the school for information on the ghostly technique!"/>
-    <Split name="&T;quest_epi6_task_searchForest_2" text="Search around the Deep Woods for the Specters of the Forest!"/>
-    <Split name="&T;quest_epi6_task_searchRooftop_2" text="Search around the school's Rooftop for the Phantom Pusher!"/>
-    <Split name="&T;quest_epi6_task_searchCafeteria_2" text="Fire up your neurons with a snack at the Cafeteria!"/>
-    <Split name="&T;quest_epi6_task_searchSchool_2" text="Rethink your strategy at the Central Plaza!"/>
-    <Split name="&T;quest_epi6_task_searchTombstone_2" text="Investigate the secret of the Tombstone in the Forest!"/>
-    <Split name="&T;quest_epi6_task_tournamentMatch_2" text="Attend your Tournament match!"/>
-  </Parent>
-  <Parent name="epi7" text="Episode 7 - The Fellowship of the Square">
-    <Split name="&T;quest_epi7_task_goToPractice_2" text="Begin your practice at the Court near the Infirmary!"/>
-    <Split name="&T;quest_epi7_task_goToCableCar_2" text="Find a way to reach Mount Dodji!"/>
-    <Split name="&T;quest_epi7_task_findTheRadioTower_2" text="Locate the Radio Tower!"/>
-    <Split name="&T;quest_epi7_task_reachTheRadioTower_2" text="Make your way up to the Radio Tower!"/>
-    <Split name="&T;quest_epi7_task_goToTheLibrary_2" text="Make haste to the Library!"/>
-    <Split name="&T;quest_epi7_task_sneakyIntoTheDownstairsRoom_2" text="Sneak into the Squareballer meeting at the Library's basement!"/>
-    <Split name="&T;quest_epi7_task_goToThePrincipalsOffice_2" text="Go see the Principal in his Office!"/>
-    <Split name="&T;quest_epi7_task_goToTheForest_2" text="Explore the Forest and look for Boris's whereabouts!"/>
-    <Split name="&T;quest_epi7_task_goThroughTheGate_2" text="Investigate the Deep Woods!"/>
-    <Split name="&T;quest_epi7_task_enterBorisHome_2" text="Find your way to Boris's House!"/>
-  </Parent>
-  <Parent name="epi8" text="Episode 8 - The Grand Finale">
-    <Split name="&T;quest_epi8_task_goToTheDome_2" text="Head to the final Tournament match at the Dome!"/>
-    <Split name="&T;quest_epi8_task_defeatTheRobots_2" text="Defeat the Mascots holding your team captive!"/>
-    <Split name="&T;quest_epi8_task_returnToDome_2" text="Search for Nino at the Dome!"/>
-    <Split name="&T;quest_epi8_task_goToBorisHouse_2" text="Check up on Boris at his house in the Forest!"/>
-    <Split name="&T;quest_epi8_task_goToBlockedSchool_2" text="Look for the professors at the school's Main Building!"/>
-    <Split name="&T;quest_epi8_task_goToInfirmary_2" text="Check out the Infirmary!"/>
-    <Split name="&T;quest_epi8_task_findThePrincipal_2" text="Locate the Principal inside the school's Main Building!"/>
-    <Split name="&T;quest_epi8_task_retrieveTheKeys_2" text="Retrieve the keys to get into the Principal's office!"/>
-    <Split name="&T;quest_epi8_task_findThePrincipal2_2" text="Check what's going on inside the Principal's Office!"/>
-    <Split name="&T;quest_epi8_task_goToCableCar_2" text="Get to the Cable Car and try to manually operate it!"/>
-    <Split name="&T;quest_epi8_task_goToRadioTower_2" text="Go to the Radio Tower and insert the thumb drive into the Mixing Board!"/>
-    <Split name="&T;quest_epi8_task_defeatMenino_2" text="Defeat Nino!"/>
-  </Parent>
-
-
-  <Empty name="SideQuests" text=" - - Side Quests - - "/>
-  <!--1-->
-  <Parent name="sqSimpleExperiment" text="A Simple Experiment">
-    <Split name="&T;quest_sqSimpleExperiment_task_battleKyabo_2" text="Challenge the unsuspecting person!"/>
-    <Split name="&T;quest_sqSimpleExperiment_task_returnToGirl_2" text="Return to the scientist girl!"/>
-  </Parent>
-  <!--2-->
-  <Parent name="sqLostWallet" text="An Unexpected Crisis">
-    <Split name="&T;quest_sqLostWallet_task_talkToBonito_2" text="Borrow the Grabber Rod from George!"/>
-    <Split name="&T;quest_sqLostWallet_task_returnToQuestGiver_2" text="Take the Grabber Rod to the boy who lost his wallet!"/>
-  </Parent>
-  <Parent name="sqShop" text="An Impulse Purchase">
-    <Split name="&T;quest_sqShop_task_goToCabelo_2" text="Buy any type of gear at the Dodge Shop!"/>
-    <Split name="&T;quest_sqShop_task_returnToQuestGiver_2" text="Take the gear you bought back to that busy student!"/>
-  </Parent>
-  <!--3-->
-  <Parent name="sqLostGlasses" text="Find the Glasses!">
-    <Split name="&T;quest_sqLostGlasses_task_task1_searchClues_2" text="Search for clues around the school!"/>
-    <Split name="&T;quest_sqLostGlasses_task_task2_cafeteria_2" text="Interrogate the Lunch Lay!"/>
-    <Split name="&T;quest_sqLostGlasses_task_task3_returnGlasses_2" text="Return the glasses to that girl!"/>
-  </Parent>
-  <Parent name="sqFountainBattles" text="Nature's Desire">
-    <Split name="&T;quest_sqFountainBattles_task_task1_battleTramway_2" text="Find the litterer near the Cable Car!"/>
-    <Split name="&T;quest_sqFountainBattles_task_task2_battleDome_2" text="Find the litterer near the Infirmary!"/>
-    <Split name="&T;quest_sqFountainBattles_task_task3_battleForest_2" text="Find the litterer inside the Forest!"/>
-    <Split name="&T;quest_sqFountainBattles_task_task4_returnLake_2" text="Report back to the guy who can interpret the water's desire!"/>
-  </Parent>
-  <!--4-->
-  <Parent name="sqElementalBalls" text="Keep your Trade Secrets">
-    <Split name="&T;quest_sqElementalBalls_task_investigateFire_2" text="Search around the Forest for the first set of leaked prototype dodgeballs!"/>
-    <Split name="&T;quest_sqElementalBalls_task_investigateIce_2" text="Search around the Forest for the second set of leaked prototype dodgeballs!"/>
-    <Split name="&T;quest_sqElementalBalls_task_investigateShock_2" text="Search around the Forest for the third set of leaked prototype dodgeballs!"/>
-    <Split name="&T;quest_sqElementalBalls_task_reportFindings_2" text="Take the prototype dodgeballs back to Noemi!"/>
-  </Parent>
-  <!--6-->
-  <Parent name="sqTony" text="Underground Tournament">
-    <Split name="&T;quest_sqTony_task_completeTournament_2" text="Complete the Underground Tournament at Big Tony's Den!"/>
-  </Parent>
-  <Parent name="sqBathroom" text="A Weird Place for a Game">
-    <Split name="&T;quest_sqBathroom_task_check_2" text="Check what's happening in the school's Bathroom!"/>
-    <Split name="&T;quest_sqBathroom_task_defeat_2" text="Beat the game designer at his own game!"/>
-  </Parent>
-  <!--7-->
-  <Parent name="sqRetriever" text="Retrieve the Books!">
-    <Split name="&T;quest_sqRetriever_task_forest_2" text="Retrieve a book from the person in the Forest!"/>
-    <Split name="&T;quest_sqRetriever_task_parkinglot_2" text="Retrieve a book from the person at the Parking Lot!"/>
-    <Split name="&T;quest_sqRetriever_task_mountain_2" text="Retrieve several books from the person at Mount Dodji!"/>
-    <Split name="&T;quest_sqRetriever_task_return_2" text="Return the books to the guy at the Dorm's Basement!"/>
-  </Parent>
-  <!--8-->
-  <Parent name="sqDailyChallenger" text="The Daily Challenge">
-    <Split name="&T;quest_sqDailyChallenger_task_defeat_2" text="Defeat the challenger every day!"/>
-  </Parent>
-
-  <Empty name="MiniGames" text=" - - Mini Games - - "/>
-  <Parent name="Kat" text="Dodging Challenge">
-    <Split name="&M;minigame_1-0_start" text="Easy (begin)"/>
-    <Split name="&M;minigame_1-0_end"   text="Easy (end)"/>
-    <Split name="&M;minigame_1-0_rank4" text="Easy (S-Rank)"/>
-    <Split name="&M;minigame_1-1_start" text="Normal (begin)"/>
-    <Split name="&M;minigame_1-1_end"   text="Normal (end)"/>
-    <Split name="&M;minigame_1-1_rank4" text="Normal (S-Rank)"/>
-    <Split name="&M;minigame_1-2_start" text="Hard (begin)"/>
-    <Split name="&M;minigame_1-2_end"   text="Hard (end)"/>
-    <Split name="&M;minigame_1-2_rank4" text="Hard (S-Rank)"/>
-  </Parent>
-  <Parent name="Kako" text="Destruction Challenge">
-    <Split name="&M;minigame_3-0_start" text="Easy (begin)"/>
-    <Split name="&M;minigame_3-0_end"   text="Easy (end)"/>
-    <Split name="&M;minigame_3-0_rank4" text="Easy (S-Rank)"/>
-    <Split name="&M;minigame_3-1_start" text="Normal (begin)"/>
-    <Split name="&M;minigame_3-1_end"   text="Normal (end)"/>
-    <Split name="&M;minigame_3-1_rank4" text="Normal (S-Rank)"/>
-    <Split name="&M;minigame_3-2_start" text="Hard (begin)"/>
-    <Split name="&M;minigame_3-2_end"   text="Hard (end)"/>
-    <Split name="&M;minigame_3-2_rank4" text="Hard (S-Rank)"/>
-  </Parent>
-  <Parent name="Fortunato" text="Defense Challenge">
-    <Split name="&M;minigame_2-0_start" text="Easy (begin)"/>
-    <Split name="&M;minigame_2-0_end"   text="Easy (end)"/>
-    <Split name="&M;minigame_2-0_rank4" text="Easy (S-Rank)"/>
-    <Split name="&M;minigame_2-1_start" text="Normal (begin)"/>
-    <Split name="&M;minigame_2-1_end"   text="Normal (end)"/>
-    <Split name="&M;minigame_2-1_rank4" text="Normal (S-Rank)"/>
-    <Split name="&M;minigame_2-2_start" text="Hard (begin)"/>
-    <Split name="&M;minigame_2-2_end"   text="Hard (end)"/>
-    <Split name="&M;minigame_2-2_rank4" text="Hard (S-Rank)"/>
-  </Parent>
-
-  <Empty name="Chests" text=" - - Chests - - "/>
-  <Parent name="SchoolGrounds" text="School Grounds">
-    <Split name="&T;tChest_schoolgrounds1_1" text="Chest School Grounds 1"/>
-    <Split name="&T;tChest_schoolgrounds2_1" text="Chest School Grounds 2"/>
-    <Split name="&T;tChest_schoolgrounds3_1" text="Chest School Grounds 3"/>
-    <Split name="&T;tChest_schoolgrounds4_1" text="Chest School Grounds 4"/>
-    <Split name="&T;tChest_schoolgrounds5_1" text="Chest School Grounds 5"/>
-    <Split name="&T;tChest_schoolgrounds6_1" text="Chest School Grounds 6"/>
-    <Split name="&T;tChest_schoolgrounds7_1" text="Chest School Grounds 7"/>
-    <Split name="&T;tChest_schoolgrounds8_1" text="Chest School Grounds 8"/>
-    <Split name="&T;tChest_schoolgrounds9_1" text="Chest School Grounds 9"/>
-    <Split name="&T;tChest_schoolgrounds10_1" text="Chest School Grounds 10"/>
-    <Split name="&T;tChest_schoolgrounds11_1" text="Chest School Grounds 11"/>
-    <Split name="&T;tChest_schoolgrounds12_1" text="Chest School Grounds 12"/>
-    <Split name="&T;tChest_schoolgrounds13_1" text="Chest School Grounds 13"/>
-    <Split name="&T;tChest_schoolgrounds14_1" text="Chest School Grounds 14"/>
-    <Split name="&T;tChest_schoolgrounds15_1" text="Chest School Grounds 15"/>
-    <Split name="&T;tChest_schoolgrounds16_1" text="Chest School Grounds 16"/>
-    <Split name="&T;tChest_schoolgrounds17_1" text="Chest School Grounds 17"/>
-    <Split name="&T;tChest_schoolgroundsOob1_1" text="Chest School Grounds OOB"/>
-    <Split name="&T;tChest_kat_1_1" text="Chest Kat's Classroom"/>
-    <Split name="&T;tChest_kako1_1" text="Chest Ma'Kako's Classroom 1"/>
-    <Split name="&T;tChest_kako2_1" text="Chest Ma'Kako's Classroom 2"/>
-    <Split name="&T;tChest_rooftop1_1" text="Chest Academy Rooftop 1"/>
-    <Split name="&T;tChest_rooftop2_1" text="Chest Academy Rooftop 2"/>
-    <Split name="&T;tChest_infirmary_1_1" text="Chest Infirmary 1"/>
-    <Split name="&T;tChest_infirmary_2_1" text="Chest Infirmary 2"/>
-    <Split name="&T;tChest_dome1_1" text="Chest Dome 1"/>
-    <Split name="&T;tChest_dome2_1" text="Chest Dome 2"/>
-    <Split name="&T;tChest_dome3_1" text="Chest Dome 3"/>
-    <Split name="&T;tChest_dome4_1" text="Chest Dome 4"/>
-    <Split name="&T;tChest_domeOob1_1" text="Chest Dome OOB"/>
-  </Parent>
-  <Parent name="DormArea" text="Leisure Area">
-    <Split name="&T;tChest_dormarea1_1" text="Chest Leisure Area 1"/>
-    <Split name="&T;tChest_dormarea2_1" text="Chest Leisure Area 2"/>
-    <Split name="&T;tChest_dormarea3_1" text="Chest Leisure Area 3"/>
-    <Split name="&T;tChest_dormarea4_1" text="Chest Leisure Area 4"/>
-    <Split name="&T;tChest_library_1f_1_1" text="Chest Library"/>
-    <Split name="&T;tChest_dorm_1f_1" text="Chest Dormitory 1F 1"/>
-    <Split name="&T;tChest_dorm_1f_2_1" text="Chest Dormitory 1F 2"/>
-    <Split name="&T;tChest_dorm_2f_1" text="Chest Dormitory 2F"/>
-    <Split name="&T;tChest_dorm_b1f_1" text="Chest Dormitory Basement"/>
-  </Parent>
-  <Parent name="Forest" text="Forest">
-    <Split name="&T;tChest_forest1_1" text="Chest Forest 1"/>
-    <Split name="&T;tChest_forest2_1" text="Chest Forest 2"/>
-    <Split name="&T;tChest_forest3_1" text="Chest Forest 3"/>
-    <Split name="&T;tChest_forest4_1" text="Chest Forest 4"/>
-    <Split name="&T;tChest_forest5_1" text="Chest Forest 5"/>
-    <Split name="&T;tChest_forest6_1" text="Chest Forest 6"/>
-    <Split name="&T;tChest_forest7_1" text="Chest Forest 7"/>
-    <Split name="&T;tChest_forest8_1" text="Chest Forest 8"/>
-    <Split name="&T;tChest_forest9_1" text="Chest Forest 9"/>
-    <Split name="&T;tChest_forest10_1" text="Chest Forest 10"/>
-    <Split name="&T;tChest_forest11_1" text="Chest Forest 11"/>
-    <Split name="&T;tChest_forest12_1" text="Chest Forest 12"/>
-    <Split name="&T;tChest_forest13_1" text="Chest Forest 13"/>
-    <Split name="&T;tChest_forest14_1" text="Chest Forest 14"/>
-    <Split name="&T;tChest_forestOob1_1" text="Chest Forest OOB"/>
-    <Split name="&T;tChest_lab_court1_1" text="Chest Laboratory 1"/>
-    <Split name="&T;tChest_lab_court2_1" text="Chest Laboratory 2"/>
-    <Split name="&T;tChest_lab_court3_1" text="Chest Laboratory 3"/>
-  </Parent>
-  <Parent name="Parkinglot" text="Parking Lot">
-    <Split name="&T;tChest_parkinglot1_1" text="Chest Parking Lot 1"/>
-    <Split name="&T;tChest_parkinglot2_1" text="Chest Parking Lot 2"/>
-    <Split name="&T;tChest_parkinglot3_1" text="Chest Parking Lot 3"/>
-    <Split name="&T;tChest_parkinglot4_1" text="Chest Parking Lot 4"/>
-    <Split name="&T;tChest_parkinglotOob1_1" text="Chest Parking Lot OOB"/>
-    <Split name="&T;tChest_tony1_1" text="Chest Big Tony's Den"/>
-  </Parent>
-  <Parent name="MtDodji" text="Mount Dodji">
-    <Split name="&T;tChest_mountain1_1" text="Chest Mt. Dodji 1"/>
-    <Split name="&T;tChest_mountain2_1" text="Chest Mt. Dodji 2"/>
-    <Split name="&T;tChest_mountain3_1" text="Chest Mt. Dodji 3"/>
-    <Split name="&T;tChest_mountain4_1" text="Chest Mt. Dodji 4"/>
-    <Split name="&T;tChest_mountain5_1" text="Chest Mt. Dodji 5"/>
-    <Split name="&T;tChest_mountain6_1" text="Chest Mt. Dodji 6"/>
-    <Split name="&T;tChest_mountain7_1" text="Chest Mt. Dodji 7"/>
-    <Split name="&T;tChest_mountain8_1" text="Chest Mt. Dodji 8"/>
-    <Split name="&T;tChest_mountain9_1" text="Chest Mt. Dodji 9"/>
-    <Split name="&T;tChest_mountain10_1" text="Chest Mt. Dodji 10"/>
-    <Split name="&T;tChest_mountain11_1" text="Chest Mt. Dodji 11"/>
-  </Parent>
+  <Parent name="maps" text="Maps">
+  </Parent-->
 </Splits>
