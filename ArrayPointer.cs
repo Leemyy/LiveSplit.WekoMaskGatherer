@@ -16,7 +16,7 @@ namespace LiveSplit.WekoMaskGatherer {
             get => _pointer.New;
             set => _pointer.New = value;
         }
-        
+
         public ArrayBody Old {
             get => _pointer.Old;
             set => _pointer.Old = value;
@@ -65,7 +65,7 @@ namespace LiveSplit.WekoMaskGatherer {
                 return SlotsInternal_Simple(buffer);
             }
 
-            return SlotsInternal_Complex(data, maxBytesToRead, totalBytesToRead);
+            return SlotsInternal_Buffered(data, maxBytesToRead, totalBytesToRead);
         }
 
         private IEnumerable<T> SlotsInternal_Simple(byte[] buffer) {
@@ -74,7 +74,7 @@ namespace LiveSplit.WekoMaskGatherer {
             }
         }
 
-        private IEnumerable<T> SlotsInternal_Complex(IntPtr data, int maxBytesToRead, int totalBytesToRead) {
+        private IEnumerable<T> SlotsInternal_Buffered(IntPtr data, int maxBytesToRead, int totalBytesToRead) {
             byte[] buffer;
             int offset = 0;
             int bufferOffset;
@@ -111,10 +111,6 @@ namespace LiveSplit.WekoMaskGatherer {
             get => _pointer.Old;
             set => _pointer.Old = value;
         }
-
-        public bool CountChanged => !Old.Count.Equals(New.Count);
-
-        public bool DataReferenceChanged => !Old.DataReference.Equals(New.DataReference);
 
         public bool UpdateOnNullPointer {
             get => _pointer.UpdateOnNullPointer;

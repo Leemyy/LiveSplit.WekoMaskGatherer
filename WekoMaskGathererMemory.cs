@@ -13,7 +13,10 @@ public partial class WekoMaskGathererMemory : Memory {
 
     public bool IsGameRunning { get; private set; }
 
+    public FNameLookup NameLookup { get; private set; }
+
     private StringPointer Map { get; set; }
+    public ArrayPointer<IntPtr> Actors { get; private set; }
     public string? CurrentMap { get; private set; }
     private string _lastValidMap = MapName.Startup;
     public string PreviousMap { get; private set; } = MapName.Startup;
@@ -32,12 +35,15 @@ public partial class WekoMaskGathererMemory : Memory {
     public Pointer<int> InventoryTab { get; private set; }
     private bool _itemLookupInitialized;
     public Dictionary<FNameEntryId, string> ItemLookup { get; private set; }
+    public Pointer<IntPtr> FNameTable { get; private set; }
 
 
     private readonly Dictionary<string, int> trackers = new Dictionary<string, int>();
 
     public WekoMaskGathererMemory(Logger logger) : base(logger) {
         OnHook += Init;
+
+        NameLookup = new FNameLookup(new FNameTableHandle(this));
 
         //OnExit += () => { };
     }
@@ -56,6 +62,10 @@ public partial class WekoMaskGathererMemory : Memory {
         mapName.StringType = EStringType.UTF16;
         var gameState = ptrFactory.Make<IntPtr>(world, 0x120);
         var persistentLevel = ptrFactory.Make<IntPtr>(world, 0x30);
+        // This post was really helpful in figuring out where to look for actors
+        // Seems like an ultra-dodgy website, tho. So browse with care.
+        // https://www.unknowncheats.me/forum/unreal-engine-4-a/507230-ue4-cheat-sheet.html
+        var actors = Actors = ptrFactory.MakeArray<IntPtr>(game, persistentLevel, 0x98);
         var worldSettings = ptrFactory.Make<IntPtr>(persistentLevel, 0x258);
 
         var gameInstance = ptrFactory.Make<IntPtr>(engine, 0xD28);
@@ -102,6 +112,8 @@ public partial class WekoMaskGathererMemory : Memory {
 
         var equipment = Equipment = ptrFactory.MakeArray<InventorySlot>(game, weko, 0x740);
 
+        var fNameTable = FNameTable = ptrFactory.Make<IntPtr>(0x04BB4F80);
+
         logger.Log("Pointers Initialized:");
         logger.Log(ptrFactory.ToString());
         _itemLookupInitialized = false;
@@ -112,6 +124,7 @@ public partial class WekoMaskGathererMemory : Memory {
         if(!attached) {
             if(IsGameRunning) {
                 logger.Log("Game Lost!");
+                NameLookup.Reset();
             }
             IsGameRunning = false;
             return false;
@@ -133,8 +146,8 @@ public partial class WekoMaskGathererMemory : Memory {
         if(!_itemLookupInitialized) {
             _itemLookupInitialized = InitializeItemLookup();
         } else if (!logged){
-            LogStuff();
             logged = true;
+            LogStuff();
         }
 
         return true;
@@ -143,17 +156,34 @@ public partial class WekoMaskGathererMemory : Memory {
     private bool logged = false;
     private void LogStuff() {
         int i = 0;
-        foreach(var tab in Inventory) {
-            logger.Log($"Inventory[{i++}]");
-            foreach(var entry in tab.Slots()) {
-                if(entry.Amount < 1) {
-                    continue;
-                }
+        try {
+            logger.Log($"Inventory Dump:");
+            foreach(var tab in Inventory) {
+                logger.Log($"Inventory[{i++}]");
+                foreach(var entry in tab.Slots()) {
+                    if(entry.Amount < 1) {
+                        continue;
+                    }
 
-                var itemName = ItemLookup[entry.ItemId];
-                logger.Log($"  {entry.ItemId} : {itemName}");
+                    //var itemName = ItemLookup[entry.ItemId];
+                    var itemName = NameLookup.FindString(entry.ItemId);
+                    logger.Log($"  {entry.ItemId} : {itemName}");
+                }
             }
+
+            i = 0;
+            logger.Log($"Actor Dump:");
+            foreach(var actor in Actors.Slots()) {
+                var fName = game.Read<FNameEntryId>(actor + 0x18);
+                var name = NameLookup.FindString(fName);
+                logger.Log($"  [{i++:D4}] {(ulong)actor:X16} -> {fName} : {name}");
+            }
+        } catch(Exception e) {
+            logger.Log($"Error while dumping:");
+            logger.Log(e);
         }
+
+        logger.Log($"End of Dump");
     }
 
     private void UpdateMap() {
@@ -185,7 +215,8 @@ public partial class WekoMaskGathererMemory : Memory {
         var builder = new Dictionary<FNameEntryId, string>();
         for(int i = 0; i < ItemName.Length; i++) {
             var itemId = game.Read<FNameEntryId>(address + i * 0x18);
-            builder.Add(itemId, ItemName[i]);
+            //builder.Add(itemId, ItemName[i]);
+            builder.Add(itemId, NameLookup.FindString(itemId));
         }
 
         ItemLookup = builder;

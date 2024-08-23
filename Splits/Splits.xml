@@ -17,79 +17,79 @@
 
   <Empty name="Items" text=" - - Items - - "/>
   <Parent name="items_weapons" text="Weapons">
-    <Split name="&I;ThePolyvalentBlade" text="The Polyvalent Blade"/>
-    <Split name="&I;GleamslashWhirlwind" text="Gleamslash Whirlwind"/>
-    <Split name="&I;DemonSword" text="Demon Sword"/>
+    <Split name="&I;WaeponStart" text="The Polyvalent Blade"/>
+    <Split name="&I;WeaponSpear" text="Gleamslash Whirlwind"/>
+    <Split name="&I;Weapon2M" text="Demon Sword"/>
   </Parent>
   <Parent name="items_shields" text="Shields">
-    <Split name="&I;WoodenShield" text="Wooden Shield"/>
-    <Split name="&I;CalciferaMask" text="Calcifera Mask"/>
+    <Split name="&I;BaseShield" text="Wooden Shield"/>
+    <Split name="&I;FireMask" text="Calcifera Mask"/>
     <Split name="&I;GolemShield" text="Golem's Shield"/>
   </Parent>
   <Parent name="items_relics" text="Relics">
-    <Split name="&I;CalmMindMask" text="Calm Mind Mask"/>
-    <Split name="&I;MomentumMask" text="Momentum Mask"/>
-    <Split name="&I;MerchantMask" text="Merchant's Mask"/>
-    <Split name="&I;CalcereousMask" text="Calcereous Mask"/>
-    <Split name="&I;SmallStaminaMask" text="Small Stamina Mask"/>
-    <Split name="&I;MediumStaminaMask" text="Medium Stamina Mask"/>
-    <Split name="&I;BigStaminaMask" text="Big Stamina Mask"/>
-    <Split name="&I;SmallLifeMask" text="Small Life Mask"/>
-    <Split name="&I;MediumLifeMask" text="Medium Life Mask"/>
-    <Split name="&I;BigLifeMask" text="Big Life Mask"/>
-    <Split name="&I;FlamingBoomerang" text="Flaming Boomerang"/>
+    <Split name="&I;LifeMask" text="Calm Mind Mask"/>
+    <Split name="&I;SpeedyMask" text="Momentum Mask"/>
+    <Split name="&I;GreedyMask" text="Merchant's Mask"/>
+    <Split name="&I;CalcareousMask" text="Calcereous Mask"/>
+    <Split name="&I;StaminaMaskSmall" text="Small Stamina Mask"/>
+    <Split name="&I;StaminaMaskMedium" text="Medium Stamina Mask"/>
+    <Split name="&I;StaminaMaskBig" text="Big Stamina Mask"/>
+    <Split name="&I;LifeMaskSmall" text="Small Life Mask"/>
+    <Split name="&I;LifeMaskMedium" text="Medium Life Mask"/>
+    <Split name="&I;LifeMaskBig" text="Big Life Mask"/>
+    <Split name="&I;FlameBoomerang" text="Flaming Boomerang"/>
     <Split name="&I;HurricaneBoomerang" text="Hurricane Boomerang"/>
     <Split name="&I;CraterMask" text="Crater Mask"/>
     <Split name="&I;InfernoMask" text="Inferno Mask"/>
     <Split name="&I;SoulsKing" text="Souls King"/>
     <Split name="&I;SoulsQueen" text="Souls Queen"/>
-    <Split name="&I;LightWeaponRelic" text="Light Weapon Relic"/>
-    <Split name="&I;FurnaceMaskRelic" text="Furnace Mask Relic"/>
-    <Split name="&I;SmallDamageRelic" text="Small Damage Relic"/>
-    <Split name="&I;MediumDamageRelic" text="Medium Damage Relic"/>
-    <Split name="&I;MajorDamageRelic" text="Major Damage Relic"/>
-    <Split name="&I;SwiftRollRelic" text="Swift Roll Relic"/>
+    <Split name="&I;LightWeapon" text="Light Weapon Relic"/>
+    <Split name="&I;FurnaceMask" text="Furnace Mask Relic"/>
+    <Split name="&I;DamageRelicSmall" text="Small Damage Relic"/>
+    <Split name="&I;DamageRelicMedium" text="Medium Damage Relic"/>
+    <Split name="&I;DamageRelicMajor" text="Major Damage Relic"/>
+    <Split name="&I;RollRelic" text="Swift Roll Relic"/>
     <Split name="&I;AquaticEnduranceRelic" text="Aquatic Endurance Relic"/>
     <Split name="&I;WoundedSoulRelic" text="Wounded Soul Relic"/>
-    <Split name="&I;SwiftUnderdwellerMask" text="Swift Underdweller Mask"/>
-    <Split name="&I;ImpactUnderdwellerMask" text="Impact Underdweller Mask"/>
+    <Split name="&I;MummySpeed" text="Swift Underdweller Mask"/>
+    <Split name="&I;MummyDmg" text="Impact Underdweller Mask"/>
     <Split name="&I;SanguineVisage" text="Sanguine Visage"/>
     <Split name="&I;SandCarapace" text="Sand Carapace"/>
   </Parent>
   <Parent name="items_active" text="Active Items">
-    <Split name="&I;ScarabMask" text="Scarab Mask"/>
-    <Split name="&I;Smilerang" text="Smilerang"/>
-    <Split name="&I;FlowobMask" text="Flowob Mask"/>
-    <Split name="&I;UnderdwellerMask" text="Underdweller Mask"/>
+    <Split name="&I;GliderMask" text="Scarab Mask"/>
+    <Split name="&I;Boomerang" text="Smilerang"/>
+    <Split name="&I;MaskBomb" text="Flowob Mask"/>
+    <Split name="&I;MummyMount" text="Underdweller Mask"/>
   </Parent>
   <Parent name="items_tunics" text="Tunics">
-    <Split name="&I;RebelTunic" text="Rebel Tunic"/>
-    <Split name="&I;IceTunic" text="Ice Tunic"/>
+    <Split name="&I;TunicHoushi" text="Rebel Tunic"/>
+    <Split name="&I;TunicIce" text="Ice Tunic"/>
   </Parent>
   <Parent name="items_quest" text="Quest Items">
-    <Split name="&I;YellowKey" text="Yellow Key"/>
-    <Split name="&I;BlueKey" text="Blue Key"/>
-    <Split name="&I;SliceOfHouCheese" text="Slice of HouCheese"/>
+    <Split name="&I;KeyYellow" text="Yellow Key"/>
+    <Split name="&I;KeyBlue" text="Blue Key"/>
+    <Split name="&I;SliceCheese" text="Slice of HouCheese"/>
     <Split name="&I;PiouMilk" text="Piou Milk"/>
-    <Split name="&I;Flour" text="Flour"/>
-    <Split name="&I;TerrifiedHoushi" text="Terrified Houshi"/>
-    <Split name="&I;NarcissioPortrait" text="Narcissio's Portrait"/>
-    <Split name="&I;WoodenSmokingPipe" text="Wooden Smoking Pipe"/>
-    <Split name="&I;TwistedHorn" text="Twisted Horn"/>
+    <Split name="&I;Farine" text="Flour"/>
+    <Split name="&I;HoushiSaved" text="Terrified Houshi"/>
+    <Split name="&I;NarcissioPaint" text="Narcissio's Portrait"/>
+    <Split name="&I;WoodenPipe" text="Wooden Smoking Pipe"/>
+    <Split name="&I;GhouleHorn" text="Twisted Horn"/>
     <Split name="&I;Azurite" text="Azurite"/>
-    <Split name="&I;BottleOfLemonJuice" text="Bottle of Lemon Juice"/>
+    <Split name="&I;JuiceBottle" text="Bottle of Lemon Juice"/>
     <Split name="&I;RaceTicket" text="Race Ticket"/>
-    <Split name="&I;RebelMask" text="Rebel Mask"/>
-    <Split name="&I;BottleOfGlue" text="Bottle of Glue"/>
+    <Split name="&I;MaskHoushiRebel" text="Rebel Mask"/>
+    <Split name="&I;Gluebottle" text="Bottle of Glue"/>
     <Split name="&I;Microphone" text="Microphone"/>
     <Split name="&I;VinylRecord" text="Vinyl Record"/>
     <Split name="&I;YouthElixir" text="Youth Elixir"/>
     <Split name="&I;EvilEye" text="Evil Eye"/>
-    <Split name="&I;NebulaSphere" text="Nebula Sphere"/>
-    <Split name="&I;Medal" text="Medal"/>
+    <Split name="&I;BouleGenie" text="Nebula Sphere"/>
+    <Split name="&I;medal" text="Medal"/>
   </Parent>
   <Parent name="items_masks" text="Primordial Masks">
-    <Split name="&I;PrimordialWrathMask" text="Primordial Wrath Mask"/>
+    <Split name="&I;PrimordialAngerMask" text="Primordial Wrath Mask"/>
     <Split name="&I;PrimordialGluttonyMask" text="Primordial Gluttony Mask"/>
     <Split name="&I;PrimordialGreedMask" text="Primordial Greed Mask"/>
     <Split name="&I;PrimordialLustMask" text="Primordial Lust Mask"/>
@@ -98,7 +98,7 @@
   </Parent>
 
   <Empty name="Exploration" text=" - - Exploration - - "/>
-  <!--Parent name="maps" text="Toros">
+  <!--Parent name="travel" text="Toros">
   </Parent>
   <Parent name="maps" text="Maps">
   </Parent-->

@@ -21,6 +21,9 @@ namespace LiveSplit.WekoMaskGatherer {
 
 
         public override bool Start() {
+            //ToDo: make sure this can't fire before the intro cinematic ends
+            // There seems to be a frame where these conditions are met,
+            // before the initial cutscene starts.
             return memory.NewGameStarted
                 //&& memory.SaveData.New != IntPtr.Zero
                 && memory.State.Old == WekoState.Cutsceneing
@@ -63,12 +66,12 @@ namespace LiveSplit.WekoMaskGatherer {
             }
 
             foreach(var tab in memory.Inventory) {
-                foreach(var entry in tab.Slots()) {
-                    if(entry.Amount < 1) {
+                foreach(var item in tab.Slots()) {
+                    if(item.Amount < 1) {
                         continue;
                     }
 
-                    var itemName = memory.ItemLookup[entry.ItemId];
+                    var itemName = memory.NameLookup.FindString(item.ItemId);
                     if(_remainingSplits.Split(ItemPrefix, itemName)) {
                         return true;
                     }

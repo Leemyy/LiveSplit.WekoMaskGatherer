@@ -50,12 +50,15 @@
     <Compile Include="ArrayPointer.cs" />
     <Compile Include="ExtendedNestedPointerFactory.cs" />
     <Compile Include="FName.cs" />
+    <Compile Include="FNameLookup.cs" />
     <Compile Include="InventorySlot.cs" />
     <Compile Include="ItemName.cs" />
     <Compile Include="ItemEntry.cs" />
     <Compile Include="MapName.cs" />
+    <Compile Include="GameAddressHandle.cs" />
     <Compile Include="WekoMaskGathererComponent.cs" />
     <Compile Include="WekoMaskGathererComponentLogic.cs" />
+    <Compile Include="WekoMaskGathererMemory.GameHandle.cs" />
     <Compile Include="WekoMaskGathererMemory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WekoState.cs" />
