@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="ArrayBody.cs" />
     <Compile Include="ArrayPointer.cs" />
-    <Compile Include="ExtendedNestedPointerFactory.cs" />
+    <Compile Include="NestedPointerFactoryExtensions.cs" />
     <Compile Include="FName.cs" />
     <Compile Include="FNameLookup.cs" />
     <Compile Include="InventorySlot.cs" />
@@ -56,6 +56,8 @@
     <Compile Include="ItemEntry.cs" />
     <Compile Include="MapName.cs" />
     <Compile Include="GameAddressHandle.cs" />
+    <Compile Include="ProgressEvent.cs" />
+    <Compile Include="StringArrayPointer.cs" />
     <Compile Include="WekoMaskGathererComponent.cs" />
     <Compile Include="WekoMaskGathererComponentLogic.cs" />
     <Compile Include="WekoMaskGathererMemory.GameHandle.cs" />
@@ -66,10 +68,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Splits\Presets.xml" />
     <EmbeddedResource Include="Splits\Splits.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Components\LiveSplit.WekoMaskGatherer.dll" />
-    <None Include="Components\ComponentsUpdate.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

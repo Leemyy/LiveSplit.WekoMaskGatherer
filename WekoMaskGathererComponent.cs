@@ -1,5 +1,6 @@
 ﻿using LiveSplit.Model;
 using LiveSplit.UI.Components;
+using System.Collections.Generic;
 using Voxif.AutoSplitter;
 using Voxif.IO;
 
@@ -8,7 +9,7 @@ namespace LiveSplit.WekoMaskGatherer {
     public partial class WekoMaskGathererComponent : Component {
         protected override EGameTime GameTimeType => EGameTime.Loading;
 
-        private WekoMaskGathererMemory memory;
+        private WekoMaskGathererMemory _memory;
 
         public WekoMaskGathererComponent(LiveSplitState state) : base(state) {
 #if DEBUG
@@ -18,16 +19,18 @@ namespace LiveSplit.WekoMaskGatherer {
 #endif
             logger.StartLogger();
 
-            memory = new WekoMaskGathererMemory(logger);
+            _memory = new WekoMaskGathererMemory(logger);
 
             settings = new TreeSettings(state, StartSettings, ResetSettings, OptionsSettings);
 
+            _completedSplits = new HashSet<(string, string)>();
             _remainingSplits = new RemainingDictionary(logger);
+            _seenActors = new HashSet<FNameEntryId>();
         }
 
         public override void Dispose() {
-            memory.Dispose();
-            memory = null!;
+            _memory.Dispose();
+            _memory = null!;
             base.Dispose();
         }
     }

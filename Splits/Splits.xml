@@ -2,18 +2,20 @@
 <!DOCTYPE Splits [
   <!ENTITY B "Boss_">
   <!ENTITY I "Item_">
+  <!ENTITY QT "Travel_">
   <!ENTITY M "Map_">
+  <!ENTITY D "Door_">
 ]>
 <Splits>
   <Empty name="Bosses" text=" - - Bosses - - "/>
-  <Split name="&B;Ragorus_start" text="Ragorus Encountered"/>
-  <Split name="&B;Ragorus_defeat" text="Ragorus Defeated"/>
-  <Split name="&B;Gorifiki_start" text="Gorifiki Encountered"/>
-  <Split name="&B;Gorifiki_defeat" text="Gorifiki Defeated"/>
-  <Split name="&B;Cinos_start" text="Cinos Encountered"/>
-  <Split name="&B;Cinos_defeat" text="Cinos Defeated"/>
-  <Split name="&B;Envy_start" text="Envy Encountered"/>
-  <Split name="&B;Envy_defeat" text="Envy Defeated"/>
+  <Split name="&B;GolemBoss_BP_start" text="Ragorus Encountered"/>
+  <Split name="&B;GolemBoss_BP_defeat" text="Ragorus Defeated"/>
+  <Split name="&B;Gorilla_BP_start" text="Gorifiki Encountered"/>
+  <Split name="&B;Gorilla_BP_defeat" text="Gorifiki Defeated"/>
+  <Split name="&B;HerissonBoss_BP_start" text="Cinos Encountered"/>
+  <Split name="&B;HerissonBoss_BP_defeat" text="Cinos Defeated"/>
+  <Split name="&B;BossFinal_BP_start" text="Envy Encountered"/>
+  <Split name="&B;BossFinal_BP_defeat" text="Envy Defeated"/>
 
   <Empty name="Items" text=" - - Items - - "/>
   <Parent name="items_weapons" text="Weapons">
@@ -98,8 +100,63 @@
   </Parent>
 
   <Empty name="Exploration" text=" - - Exploration - - "/>
-  <!--Parent name="travel" text="Toros">
+  <Parent name="travel" text="Toros">
+    <Split name="&QT;HoushiVilleTutoCaveExit" text="Houshi Village Cave"/>
+    <Split name="&QT;ToroSaveHoushiVille" text="Houshi Village"/>
+    <Split name="&QT;MapDojoBigToro" text="Anaka's Dojo"/>
+    <Split name="&QT;EntryToroSaveBeach" text="Lone Beach"/>
+    <Split name="&QT;BeachIslandToroPlayerStart" text="Beach Island"/>
+    <Split name="&QT;PlayerStartToro" text="Draco Peaks"/>
+    <Split name="&QT;PlayerStartToro2" text="Draco Peaks House"/>
+    <Split name="&QT;ToroSaveDarkForest1" text="Dark Forest Village"/>
+    <Split name="&QT;DarkForest2BeforeMiniBoss" text="Dark Forest Depths"/>
+    <Split name="&QT;PS_ToroDonjonDarkForest" text="Dark Forest Dungeon"/>
+    <Split name="&QT;ToroSaveDoDoVillage" text="Dodo Village"/>
+    <Split name="&QT;ToroSaveMontagneMap" text="Tengu's Domain"/>
+    <Split name="&QT;ToroGraveyardPlayerStart" text="The Graveyard"/>
+    <Split name="&QT;ToroUnderground" text="Underground"/>
+    <Split name="&QT;LustranasRacingCircuitPlayerStart" text="Underground Racing Circuit"/>
+    <Split name="&QT;ToroSaveDodoPast" text="Slumbering Dodo Village"/>
+    <Split name="&QT;FromGaltoToHoushiPast" text="Old Houshi Forest"/>
+    <Split name="&QT;FromStunHoushiPast" text="Old Rebel Prison"/>
+    <Split name="&QT;PS_ToroSaveMapTableau" text="Narcissio's Tower"/>
+    <Split name="&QT;ToroSaveMapSouvenir" text="The Hallway of Memories"/>
   </Parent>
   <Parent name="maps" text="Maps">
+    <Split name="&M;Map_Portail_Tuto" text="Tutorial"/>
+    <Split name="&M;Map_HoushiVille_OPTIMIZATION" text="Houshi Forest"/>
+    <Split name="&M;Map_Cave_Secret_OPTIMIZATION" text="Golem Cave"/>
+    <Split name="&M;Map_Dojo_OPTIMISATION" text="Dojo"/>
+    <Split name="&M;Map_Beach_OPTIMIZATION" text="Beach"/>
+    <Split name="&M;Map_Sanctuary_OPTIMIZATION" text="Golem Shrine"/>
+    <Split name="&M;Map_Boss_Golem" text="Ragorus Fight"/>
+    <Split name="&M;Map_Boss_Golem_Defeated" text="Ragorus Defeated"/>
+    <Split name="&M;Map_Draco_Peek_Final_" text="Draco Peaks"/>
+    <Split name="&M;Map_DarkForest_final_part_1" text="Dark Forest Village"/>
+    <Split name="&M;Map_Galto_teleportation" text="Teleporter Cave"/>
+    <Split name="&M;Map_DarkForest_final_part_2" text="Deep Dark Forest"/>
+    <Split name="&M;Map_Donjon_2_Foret_Sombre" text="Dark Forest Dungeon"/>
+    <Split name="&M;Map_Boss_Gorilla" text="Gorifiki Fight"/>
+    <Split name="&M;Map_Boss_Gorilla_Defeated" text="Gorifiki Defeated"/>
+    <Split name="&M;Map_Dodo_Village" text="Dodo Village"/>
+    <Split name="&M;Map_ZOO" text="Zoo"/>
+    <Split name="&M;Map_Dieu_Montagne" text="Tengu's Domain"/>
+    <Split name="&M;Map_Boss_Herisson" text="Cinos Fight"/>
+    <Split name="&M;Map_Boss_Herisson_Defeated" text="Cinos Defeated"/>
+    <Split name="&M;Map_Graveyard" text="Graveyard"/>
+    <Split name="&M;Map_Underground_ville" text="Underground"/>
+    <Split name="&M;Map_course_underground" text="Underground Racetrack"/>
+    <Split name="&M;Map_course_underground_Circuit" text="Underground Race"/>
+    <Split name="&M;Map_Dodo_PAST_Village" text="Slumbering Dodo Village"/>
+    <Split name="&M;Map_Houshi_Passee" text="Houshi Forest (Past)"/>
+    <Split name="&M;DonjonPrisonHoushiPast" text="Rebel Prison"/>
+    <Split name="&M;Map_Houshi_Tableau" text="Narcissio's Tower"/>
+    <Split name="&M;Map_Boss_Mechant_Houshi" text="Narcissio's Throne Room"/>
+    <Split name="&M;Map_Couloir_des_Souvenir" text="Hall of Memories"/>
+    <Split name="&M;Map_Boss_Final" text="Envy Fight"/>
+    <Split name="&M;Map_Boss_Final_Defeated" text="Credits"/>
+  </Parent>
+  <!-- ?>Parent name="doors" text="Map Transitions">
+    <Split name="&D;HoushiToBeach" text="From Houshi Forest"/>
   </Parent-->
 </Splits>

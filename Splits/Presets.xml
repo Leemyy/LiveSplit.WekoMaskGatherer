@@ -2,13 +2,31 @@
 <!DOCTYPE Presets [
   <!ENTITY B "Boss_">
   <!ENTITY I "Item_">
+  <!ENTITY QT "Travel_">
   <!ENTITY M "Map_">
+  <!ENTITY D "Door_">
 ]>
 <Presets>
   <Preset name="Default">
-    <Split name="&B;Ragorus_start"/>
-    <Split name="&B;Gorifiki_start"/>
-    <Split name="&B;Cinos_start"/>
-    <Split name="&B;Envy_defeat"/>
+    <Split name="&M;Map_HoushiVille_OPTIMIZATION"/>
+    <Split name="&M;Map_Beach_OPTIMIZATION"/>
+    <Split name="&B;GolemBoss_BP_start"/>
+    <Split name="&B;GolemBoss_BP_defeat"/>
+    <Split name="&M;Map_DarkForest_final_part_1"/>
+    <Split name="&I;DamageRelicSmall"/>
+    <Split name="&I;Boomerang"/>
+    <Split name="&B;Gorilla_BP_start"/>
+    <Split name="&B;Gorilla_BP_defeat"/>
+    <Split name="&I;HurricaneBoomerang"/>
+    <Split name="&B;HerissonBoss_BP_start"/>
+    <Split name="&B;HerissonBoss_BP_defeat"/>
+    <Split name="&M;Map_Graveyard"/>
+    <Split name="&M;Map_Underground_ville"/>
+    <Split name="&I;PrimordialLustMask"/>
+    <Split name="&I;PrimordialSlothMask"/>
+    <Split name="&M;Map_Houshi_Tableau"/>
+    <Split name="&I;PrimordialPrideMask"/>
+    <Split name="&B;BossFinal_BP_start"/>
+    <Split name="&B;BossFinal_BP_defeat"/>
   </Preset>
 </Presets>

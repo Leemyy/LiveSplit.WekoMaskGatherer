@@ -2,6 +2,7 @@
 
 public enum WekoState : byte {
     None = 0,
+    FadingIn = 1, //Not sure
     Sprinting = 2,
     Rolling = 3,
     Attacking = 4,
